@@ -11,7 +11,7 @@
                         <div class="col-xs-12 col-sm-6 col-lg-4">
                            <span class="broadkast">
                                <h4>BroadKast</h4>
-                               <a href="<?php echo site_url('Profile/contacts') ?>" class="btn neptune">BroadKast now</a>
+                               <a href="<?php echo site_url('profile/contacts') ?>" class="btn neptune">BroadKast now</a>
                            </span>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">

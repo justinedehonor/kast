@@ -22,26 +22,7 @@
                                         <h3 class="text-center">Your contacts</h3>
                                         <div class="col-xs-10 col-xs-offset-1 contactsList-container">
                                             <ul>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
-                                                <li>09288769654 <a href="#" class="close">x</a></li>
+
                                             </ul>
                                         </div>
                                         <div class="col-xs-6 col-xs-offset-3 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
@@ -64,18 +45,10 @@
                                             </div>
                                             <br clear="all" />
                                             <span class="separator">Or</span>
-                                            <input type="text" placeholder="Mobile Number">
-                                            <button class="btn glacier">Add Contact</button>
+                                            <input type="text" placeholder="Mobile Number" id="msid">
+                                            <button class="btn glacier" type="button" id="btb-add-contact">Add Contact</button>
                                             <span class="separator bordered"></span>
-                                            <div class="row">
-                                                <span class="col-xs-6">
-                                                    <button class="btn neptune">Go Back</button>
-                                                </span>
-                                                <span class="col-xs-6">
-                                                    <button type="button" class="btn aqua" data-toggle="modal" data-target="#myModal">Continue</button>
-                                                </span>
-                                            </div>
-                                            <!-- Modal -->
+                                            <button class="btn powderBlue" id="btn-continue" type="button">Continue</button>                                            <!-- Modal -->
                                             <div class="modal fade" id="myModal" role="dialog">
                                               <div class="modal-dialog" role="document">
                                                 <div class="modal-content clearfix">
@@ -83,7 +56,7 @@
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                   </div>
                                                   <div class="modal-body">
-                                                    <h4 class="col-xs-12 text-center">You don’t have any approved sender IDs yet!</h4>
+                                                    <h4 class="col-xs-12 text-center">You donâ€™t have any approved sender IDs yet!</h4>
                                                     <span class="col-xs-10 col-xs-offset-1">
                                                         <button type="button" class="col-xs-12 btn neptune" id="btn-continue">Use KAST as default</button>
                                                         <button type="button" class="col-xs-12 btn powderBlue">Request sender ID</button>
@@ -110,12 +83,30 @@
             </div>
         </div>
         <script type="text/javascript">
+
+        var contacts = [];
       $(document).ready(function(){
+
         $('#btn-continue').click(function(){
 
             window.location ="<?php echo base_url();?>Profile/message";
           //  alert();
         });
+
+        $('#btb-add-contact').click(function(){
+          //alert();
+           $('.contactsList-container ul').append('<li rel= '+$('#msid').val()+'>'+$('#msid').val()+' <a href="#" class="close">x</a></li>');
+           contacts.push($('#msid').val());
+           $('#msid').val('');
+           console.log(contacts);
+        });
+        //sending data number to right pane
+
+        $('.close a').click(function(){
+
+        });
+
+
       });
         </script>
 <?php include 'includes/dashboard-footer.php'; ?>

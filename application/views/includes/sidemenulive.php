@@ -1,7 +1,7 @@
 <header class="hidden-xs container-fluid">
     <strong class="pull-left">KAST Service / BroadKast</strong>
     <span class="pull-right">
-        <a href="<?php echo site_url('Profile') ?>">Home</a>
+        <a href="<?php echo site_url('profile') ?>">Home</a>
         <a href="">Log Out</a>
     </span>
 </header>

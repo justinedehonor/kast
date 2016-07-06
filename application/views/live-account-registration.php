@@ -10,23 +10,23 @@
                         <div class="col-md-10 col-md-offset-1 registerForm">
                             <h4>LIVE ACCOUNT SET UP</h4>
                             <div class="row">
-                            <form action="">
+                            <?php echo form_open('profile/savedata') ?>
                                 <div class="col-sm-6">
                                     <span>
                                         <label for="">Name</label>
-                                        <input type="text">
+                                        <input type="text" name="name" value="<?php echo $name; ?>">
                                     </span>
                                     <span>
                                         <label for="">Mobile Number</label>
-                                        <input type="text">
+                                        <input type="text" name="msid" value="<?php echo $msid; ?>">
                                     </span>
                                     <span>
                                         <label for="">Email Address</label>
-                                        <input type="email">
+                                        <input type="email" name="emailaddress" value="<?php echo $emailAddress; ?>">
                                     </span>
                                     <span>
                                         <label for="">Password</label>
-                                        <input type="password">
+                                        <input type="password" name="password">
                                     </span>
                                     <span>
                                         <label for="">Confirm password</label>
@@ -36,25 +36,25 @@
                                 <div class="col-sm-6">
                                     <span>
                                         <label for="">Company Name</label>
-                                        <input type="text">
+                                        <input type="text" name="companyname">
                                     </span>
                                     <span>
                                         <label for="">Billing Address</label>
-                                        <textarea rows="5"></textarea>
+                                        <textarea rows="5" name="billingaddress"></textarea>
                                     </span>
                                     <span>
                                         <label for="">Birthday</label>
-                                        <input type="text" id="pickAdate" placeholder="mm/dd/yyyy">
+                                        <input type="text" name="birthday" id="pickAdate" placeholder="mm/dd/yyyy">
                                     </span>
                                     <span>
                                         <label for="">TIN (Tax Identification Number)</label>
-                                        <input type="text">
+                                        <input type="text" name="tin">
                                     </span>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3 pull-right">
                                     <input class="btn hippieBlue" type="submit" value="Submit">
                                 </div>
-                            </form>
+                            <?php echo form_close(); ?>
                             </div>
                         </div>
                    </div>
