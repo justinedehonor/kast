@@ -1,0 +1,143 @@
+// Dashboard Sliding Menu
+body.dashboard { overflow-x: hidden;
+    .side-menu { position: absolute; z-index: 2; min-height: 100%; height: 100%;
+        .navbar-header { width: 100%;
+            .navbar-nav {}
+            .navbar-toggle {
+                &.in span {
+                    &:nth-child(2) { transform: rotate(45deg); transform-origin: 5px; }
+                    &:nth-child(3) { opacity: 0; }
+                    &:nth-child(4) { transform: rotate(-45deg); transform-origin: 5px; }
+                }
+                & > span { transition: all 0.2s;
+                    &:nth-child(2) { transform: rotate(0); }
+                    &:nth-child(3) { opacity: 1; }
+                    &:nth-child(4) { transform: rotate(0); }
+                }
+            }
+            .navbar-brand { display: block; width: 100%; height: auto; background-color: $white; padding: 25px 15px;
+                img { width: 70%; margin: auto; }
+            }
+        }
+        .side-menu-container { text-align: center; color: $white;
+            span { padding: 20px 15px; border-top: $lGray 1px solid; &:first-child { border-top: none; } }
+        }
+    }
+    .dashboard-main { z-index: 5; }
+    .modal-header { padding-bottom: 0; border: none; }
+    .modal-content { padding-bottom: 30px;
+        h4 { font-size: 140%; line-height: 140%; }
+        .modal-body { button { margin-top: 10px; padding: 10px; } }
+    }
+}
+@media screen and (max-width: 767px) {
+    body.dashboard {
+        .side-menu { position: absolute; width: 100%; border-right: none; top: 0; z-index: 5;
+            .navbar-header { border: none; padding: 8px 0; background: rgb(54,159,181); position: relative;
+                background: -moz-linear-gradient(left, rgba(54,159,181,1) 0%, rgba(160,199,198,1) 40%);
+                background: -webkit-linear-gradient(left, rgba(54,159,181,1) 0%,rgba(160,199,198,1) 40%); 
+                background: linear-gradient(to right, rgba(54,159,181,1) 0%,rgba(160,199,198,1) 40%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#369fb5', endColorstr='#a0c7c6',GradientType=1 );
+                .navbar-brand { display: inline-block; width: auto; /*padding: 17px 15px;*/ padding: 0; color: $white!important; position: absolute; top: 0; width: 150px; height: 70px; max-height: 70px;
+                    img { position: absolute; height: 70%; width: auto; left: 50%; margin-left: -53px; top: 50%; margin-top: -25px; }
+                }
+                .navbar-toggle { border: 0; float: left; padding: 18px; margin: 0; border-radius: 0;
+                    & > .icon-bar { background-color: #fff; width: 30px; height: 3px; }
+                }
+            }
+        }
+        @-moz-keyframes slidein {
+            0% { left: -300px; }
+            100% { left: 10px; }
+        }
+        @-webkit-keyframes slidein {
+            0% { left: -300px; }
+            100% { left: 10px; }
+        }
+        @keyframes slidein {
+            0% { left: -300px; }
+            100% { left: 10px; }
+        }
+        @-moz-keyframes slideout {
+            0% { left: 0; }
+            100% { left: -300px; }
+        }
+        @-webkit-keyframes slideout {
+            0% { left: 0; }
+            100% { left: -300px; }
+        }
+        @keyframes slideout {
+            0% { left: 0; }
+            100% { left: -300px; }
+        }
+        .side-menu-container { position: absolute;
+            & > .navbar-nav.slide-in {
+                -moz-animation: slidein 300ms forwards;
+                -o-animation: slidein 300ms forwards;
+                -webkit-animation: slidein 300ms forwards;
+                animation: slidein 300ms forwards;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+            }
+            & > .navbar-nav { position: relative; left: -300px; width: 300px; margin-top: 0; margin-bottom: 0; margin-left: -10px; top: 8px; height: 100%; background-color: transparent; 
+                -moz-animation: slideout 300ms forwards;
+                -o-animation: slideout 300ms forwards;
+                -webkit-animation: slideout 300ms forwards;
+                animation: slideout 300ms forwards;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+            }
+        }
+        @-moz-keyframes bodyslidein {
+            0% { left: 0; }
+          100% { left: 300px; }
+        }
+        @-webkit-keyframes bodyslidein {
+            0% { left: 0; }
+          100% { left: 300px; }
+        }
+        @keyframes bodyslidein {
+            0% { left: 0; }
+          100% { left: 300px; }
+        }
+        @-moz-keyframes bodyslideout {
+            0% { left: 300px; }
+          100% { left: 0; }
+        }
+        @-webkit-keyframes bodyslideout {
+            0% { left: 300px; }
+          100% { left: 0; }
+        }
+        @keyframes bodyslideout {
+            0% { left: 300px; }
+          100% { left: 0; }
+        }
+        .dashboard-main { position: relative;
+            -moz-animation: bodyslideout 300ms forwards;
+            -o-animation: bodyslideout 300ms forwards;
+            -webkit-animation: bodyslideout 300ms forwards;
+            animation: bodyslideout 300ms forwards;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            margin-top: 70px;
+        }
+        .dashboard-main-in {
+            -moz-animation: bodyslidein 300ms forwards;
+            -o-animation: bodyslidein 300ms forwards;
+            -webkit-animation: bodyslidein 300ms forwards;
+            animation: bodyslidein 300ms forwards;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    body.dashboard {
+        .side-menu { position: relative;
+            .navbar-header {
+                .navbar-nav { width: 100%; }
+            }
+        }
+        .dashboard-main { float: right; }
+    }
+} 

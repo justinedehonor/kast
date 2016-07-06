@@ -1,0 +1,142 @@
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none; }
+
+  .navbar .navbar-collapse {
+    text-align: center; } }
+.navbar-nav > li > a {
+  padding: 0; }
+
+@media (max-width: 992px) {
+  .main-con .center-con .text-con .broadkast-txt {
+    text-align: center; }
+
+  .main-con .center-con .text-con .broadkast-label {
+    width: 100%; }
+
+  .main-con .center-con .text-con .btn-con.centered {
+    width: 100%; }
+
+  .main-con .center-con .text-con.padding-top {
+    padding: 40px 0 50px 0; }
+
+  .services-con .title:before, .services-con .title:after {
+    width: 33%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-con .center-con .hand-img {
+    z-index: 1;
+    position: relative;
+    position: absolute;
+    opacity: .2;
+    display: none; }
+
+  .main-con .center-con .text-con {
+    text-align: center; }
+
+  .main-con .center-con .welcome-txt {
+    padding: 0; }
+
+  .main-con .center-con .form-con {
+    margin: 0 auto; }
+
+  .main-con .center-con .form-con .signup {
+    margin-bottom: 100px; }
+
+  .services-con .service-offer p {
+    height: 60px;
+    margin-top: 10px; } }
+@media (max-width: 767px) {
+  .main-con {
+    background-attachment: initial; }
+
+  .header-con .menu-con ul li {
+    display: block; }
+
+  .navbar {
+    border-top: 1px solid #a0c7c6; }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none; }
+
+  .navbar-collapse {
+    background: #52a9ba;
+    background: -moz-linear-gradient(left, #52a9ba 0%, #a0c7c6 100%);
+    background: -webkit-linear-gradient(left, #52a9ba 0%, #a0c7c6 100%);
+    background: linear-gradient(to right, #52a9ba 0%, #a0c7c6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52a9ba', endColorstr='#a0c7c6',GradientType=1 ); }
+
+  .navbar-toggle {
+    top: -65px;
+    right: 0;
+    margin: 0;
+    margin-right: 15px;
+    position: absolute; }
+
+  .header-con .menu-con {
+    background: none; }
+
+  .header-con .logo-con {
+    text-align: left; }
+
+  .main-con .center-con .hand-img {
+    display: none; }
+
+  .main-con .center-con .text-con {
+    text-align: center;
+    padding: 25px 0 40px 0; }
+
+  .main-con .center-con .text-con .why-txt {
+    font-size: 25px; }
+
+  .main-con .center-con .text-con .powerful-txt {
+    font-size: 30px; }
+
+  .main-con .center-con .text-con .mobile-txt {
+    font-size: 50px; }
+
+  .main-con .center-con .text-con .presence-txt {
+    font-size: 40px; }
+
+  .main-con .center-con .text-con .business-txt {
+    font-size: 25px; }
+
+  .header-con .login {
+    right: 80px; }
+
+  .main-con .center-con .welcome-txt {
+    padding: 0; }
+
+  .main-con .center-con .form-con {
+    margin: 0 auto; }
+
+  .main-con .center-con .form-con .signup {
+    margin-bottom: 130px; }
+
+  .main-con .center-con .text-con .broadkast-txt {
+    font-size: 42px; }
+
+  .services-con .service-offer p {
+    height: auto;
+    margin-bottom: 20px; }
+
+  .services-con .title:before, .services-con .title:after {
+    width: 30%; } }
+@media (max-width: 500px) {
+  .main-con .center-con .text-con .btn-con {
+    text-align: center; }
+
+  .main-con .center-con .text-con .btn-con .cta-btn.learn {
+    margin: 0;
+    margin-bottom: 10px; }
+
+  .main-con .center-con .hand-img {
+    top: 10px; }
+
+  .footer-con img {
+    width: 100%; }
+
+  .services-con .title:before, .services-con .title:after {
+    width: 10%; } }
+
+/*# sourceMappingURL=m-style.css.map */

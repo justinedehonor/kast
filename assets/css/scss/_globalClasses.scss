@@ -1,0 +1,70 @@
+@import '_variables';
+
+// Import Font
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html, body { height: 100%; }
+body { font: $bodyFont; color: $dGray;
+    &.dashboard { background: #eff1ee;
+        header { position: relative; z-index: 10; padding: 15px; color: $white; background: rgb(54,159,181);
+            background: -moz-linear-gradient(left,  rgba(54,159,181,1) 0%, rgba(160,199,198,1) 40%);
+            background: -webkit-linear-gradient(left,  rgba(54,159,181,1) 0%,rgba(160,199,198,1) 40%); 
+            background: linear-gradient(to right,  rgba(54,159,181,1) 0%,rgba(160,199,198,1) 40%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#369fb5', endColorstr='#a0c7c6',GradientType=1 );
+            strong { font-weight: 400; }
+            span > a { margin-left: 15px; }
+        }
+        footer { background: $hippieBlue url(../images/bg-effect-footer.jpg) bottom right no-repeat; background-size: auto; color: $white; padding: 20px 0; position: relative; top: -6px; z-index: 10;
+            ul.links { padding: 15px 0; float: left; list-style: none; margin: 0;
+                li { float: left; a { margin: 0 15px 0 0; } }
+            }
+            span.brand { padding: 0; float: right; margin: 10px 0 0 0; a { margin: 0; &:after { content: none; } img { width: 100%; } } }
+        }
+        header, footer {
+            a { text-transform: uppercase; color: $white; margin-left: 15px; position: relative;
+                &:hover { color: inherit; text-decoration: none; }
+                &:after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 3px; border-radius: 2px; background-color: $white; transition: width .2s ease-in-out; }
+                &:hover:after { width: 100%; }
+            }
+        }
+        h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+        
+        *:focus { outline: none; }
+        .noPadding { padding: 0; }
+        .noMargin { margin: 0; }
+        .border { border: 1px solid; }
+        
+        .btn { border-radius: 5px; padding: 7px 15px; display: inline-block; position: relative; text-align: center; font-weight: 700; text-transform: uppercase; color: $white; font-weight: 400; opacity: 1; transition: all .2s ease-in-out;
+            &:hover { opacity: 0.8; color: $white; }
+            &:active { top: 2px; box-shadow: none; }
+            // Button Colors
+            &.aqua { background-color: $aqua; }
+            &.glacier { background-color: $glacier; color: $white; }
+            &.hippieBlue { background-color: $hippieBlue; }
+            &.neptune { background-color: $neptune; }
+            &.powderBlue { background-color: $powderBlue; color: $white; }
+        }
+        
+        .batchUpload { position: relative; 
+            .inputfile { display: none;
+                & + label { width: 100%; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; display: inline-block; background-color: $white; border-radius: 3px; padding: 9px 15px; height: auto; transition: opacity .2s ease-in-out;
+                    span { padding: 9px 15px; text-transform: uppercase; font-weight: 700; color: $hippieBlue; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+                    &:hover { opacity: 0.8; }
+                }
+            }
+            .inputfile-6 + label {  position: relative; }
+            .inputfile-6 + label span { padding: 9px 15px; text-transform: uppercase; font-weight: 700; color: $hippieBlue; }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body.dashboard {
+        footer { text-align: center; padding: 15px 0;
+            ul.links { width: 100%; padding-top: 0;
+                li { float: none; margin: 5px 0; }
+            }
+            span.brand { margin: 0; clear: both; float: none; display: inline-block; margin: 0 auto 10px auto; }
+        }
+    }
+}

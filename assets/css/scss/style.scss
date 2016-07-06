@@ -1,0 +1,437 @@
+/*override Start*/
+body,html{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background: #f3f2f2 !important;
+}
+
+*{
+	outline: none !important; 
+}
+
+@media (min-width: 980px) {
+	.container { 
+		width: 980px !important; 
+	}	
+}
+/*override End*/
+
+
+/*override bootsrap style*/
+.navbar-default{
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.navbar{
+	margin: 0;
+	border:none;
+	min-height: 0;
+}
+
+
+
+.header-con{
+
+	.logo-con{
+		text-align: center;
+		display: block;
+		margin: 20px 0;
+
+		img{
+		}
+	}
+
+	.login{
+		font-family: "Gotham-Bold", Open Sans, sans-serif;
+		color: #50a7b1;
+		font-size: 12px;
+		text-decoration: none;
+		text-transform: uppercase;
+		position: absolute;
+	    right: 0;
+	    top: 45%;
+	}
+
+
+	.menu-con{
+		text-align: center;
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#52a9ba+0,a0c7c6+100 */
+		background: #52a9ba; /* Old browsers */
+		background: -moz-linear-gradient(left,  #52a9ba 0%, #a0c7c6 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  #52a9ba 0%,#a0c7c6 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  #52a9ba 0%,#a0c7c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52a9ba', endColorstr='#a0c7c6',GradientType=1 ); /* IE6-9 */
+
+		ul{
+			margin: 0;
+			padding: 0;
+
+			li{
+				list-style: none;
+				display: inline-block;
+				padding: 6px 15px 5px 15px;
+
+				a{
+					text-decoration: none;
+					text-transform:uppercase;
+					font-family: "Gotham-Bold", Open Sans, sans-serif;
+					font-size: 16px;
+					color: #ffffff;
+
+					&:hover{
+						color: #d7f7ff;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.main-con{
+	background: url("../images/back-bg.png") no-repeat;
+	background-size: contain;
+    background-position: bottom;
+    background-attachment: fixed;
+	background-color: #F0EEEE;
+
+    .mountain-bg{
+
+    }
+
+	.center-con{
+
+		.hand-img{
+			background: url("../images/lp-bg.png") no-repeat;
+			display: block;
+			width: 400px;
+			height: 545px;
+			background-position: 0 40px;
+
+			&.acc-setup{
+				background: url("../images/acount-hand.png") no-repeat;
+				width: 100%;
+				height: 239px;
+				background-position: 210px 1px;
+			}
+
+			&.services-hand{
+				background: url("../images/services-home-hand.png") no-repeat;
+				width: 100%;
+				height: 475px;
+    			background-position: 80px 50px;
+			}
+		}
+
+		.account-title{
+			font-family: "Gotham-Black", Open Sans, sans-serif;
+			color: #59A7B2;
+			font-size: 24px;
+			text-transform: uppercase;
+			padding: 30px 0;
+		}
+
+		.welcome-txt{
+			font-family: "Gotham-Bold", Open Sans, sans-serif;
+			color: #7FB2BF;
+			font-size: 14px;
+			text-align: center;
+			padding-left: 155px;
+			margin-bottom: 20px;
+			line-height: 16px;
+		}
+
+		.text-con{
+			padding: 70px 0 50px 0;
+			position: relative;
+			z-index: 99;
+
+			&.padding-top{
+				padding: 100px 0 50px 0;
+			}
+
+			.why-txt{
+				font-size: 50px;
+				line-height: 90%;
+				font-family: "Gotham-Black", Open Sans, sans-serif;
+				color: #58a9b3;
+				text-transform: uppercase;
+			}
+
+			.powerful-txt{
+				font-size: 57px;
+				line-height: 80%;
+				font-family: "Gotham-Black", Open Sans, sans-serif;
+				background: url(../images/bg-clip-1.png)no-repeat;
+				background-size: cover;
+			   -webkit-background-clip: text;
+			   -webkit-text-fill-color: transparent;
+			   text-transform: uppercase;
+			}
+
+			.mobile-txt{
+				font-size: 100px;
+				line-height: 80%;
+				font-family: "Gotham-Black", Open Sans, sans-serif;
+				background: url(../images/bg-clip-2.png)no-repeat;
+				background-size: cover;
+			   -webkit-background-clip: text;
+			   -webkit-text-fill-color: transparent;
+			   text-transform: uppercase;
+			}
+
+			.presence-txt{
+				font-size: 71px;
+				line-height: 85%;
+				font-family: "Gotham-Black", Open Sans, sans-serif;
+				background: url(../images/bg-clip-2.png)no-repeat;
+				background-size: cover;
+			   -webkit-background-clip: text;
+			   -webkit-text-fill-color: transparent;
+			   text-transform: uppercase;
+			}
+
+			.business-txt{
+				font-size: 36px;
+				line-height: 85%;
+				font-family: "Gotham-Black", Open Sans, sans-serif;
+				background: url(../images/bg-clip-1.png)no-repeat;
+				background-size: cover;
+			   -webkit-background-clip: text;
+			   -webkit-text-fill-color: transparent;
+			   text-transform: uppercase;
+			   display: block;
+			}
+
+			.broadkast-txt{
+				font-size: 60px;
+				line-height: 85%;
+				font-family: "Gotham-Black", Open Sans, sans-serif;
+				background: url(../images/bg-clip-1.png)no-repeat;
+				background-size: cover;
+			   -webkit-background-clip: text;
+			   -webkit-text-fill-color: transparent;
+			   text-transform: uppercase;
+			   display: block;
+			   text-align: left;
+			}
+
+			.broadkast-label{
+				font-family: "Gotham-Book", Open Sans, sans-serif;
+				font-size: 18px;
+				color: #363636;
+				width: 90%;
+			    text-align: center;
+			    padding: 25px 0;
+			}
+
+			.btn-con{
+				display: block;
+				padding: 30px 0;
+
+				&.centered{
+					text-align: center;
+					width: 90%;
+					padding: 0;
+				}
+
+				.cta-btn{
+					font-family: "Gotham-Bold", Open Sans, sans-serif;
+					font-size: 14px;
+					color: #ffffff;
+					text-transform: uppercase;
+					text-decoration: none;
+					padding: 13px 0;
+					border-radius: 6px;
+					text-decoration: none;
+					font-weight: bold;
+					width: 200px;
+					text-align: center;
+					display: inline-block;
+
+					&.sign{
+						background: #0d7ca5;
+						
+						transition:all .4s;
+
+						&:hover{
+							background: #0b6789;
+
+						}
+					}
+
+					&.learn{
+						background: #50a7b1;
+						transition:all .4s;
+						margin-right: 5px;
+
+						&:hover{
+							background: #458f98;
+						}
+					}
+
+					&.try-free{
+						background: #50a7b1;
+						transition:all .4s;
+						margin-right: 5px;
+						text-align: center;
+
+						&:hover{
+							background: #458f98;
+						}
+					}
+
+				}
+			}
+
+			p{
+				font-size: 14px;
+				text-align: center;
+				color: #323232;
+				font-family: "Gotham-Book", Open Sans, sans-serif;
+			}
+
+
+		}
+
+		.form-con{
+			width: 220px;
+
+			.act-label{
+				font-family: "Gotham-Book", Open Sans, sans-serif;
+				font-size: 12px;
+				text-align: center;
+				margin-bottom: 20px;
+				color: #363637;
+			}
+
+			.signup{
+				margin-bottom: 20px;
+
+				input[type=text]{
+					border:none;
+					border-radius: 6px;
+					text-align: center;
+					width: 100%;
+					font-size: 12px;
+					padding: 10px 10px;
+					margin-bottom: 10px;
+					font-family: "Gotham-Bold", Open Sans, sans-serif;
+
+					&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					  color: #9E9E9E;
+					}
+				}
+
+				input[type=submit]{
+					border: none;
+					border-radius: 6px;
+					text-align: center;
+					width: 100%;
+					font-size: 14px;
+					font-family: "Gotham-Bold", Open Sans, sans-serif;
+					background: #7FB2C0;
+					padding: 10px 0;
+					color: #ffffff;
+					text-transform: uppercase;
+					transition: all .2s;
+
+					&:hover{
+						background: #50A7B1;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+.services-con{
+	background: #41a4b7;
+	background: -moz-linear-gradient(top,  #41a4b7 0%, #7eb9c1 64%, #a6c8c7 100%);
+	background: -webkit-linear-gradient(top,  #41a4b7 0%,#7eb9c1 64%,#a6c8c7 100%);
+	background: linear-gradient(to bottom,  #41a4b7 0%,#7eb9c1 64%,#a6c8c7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41a4b7', endColorstr='#a6c8c7',GradientType=0 );
+	
+	.title{
+		font-family: "Gotham-Black", Open Sans, sans-serif;
+		text-align: center;
+		font-size: 32px;
+		color: #ffffff;
+		text-transform: uppercase;
+		padding: 20px 0;
+		position: relative;
+		z-index: 9999;
+
+		&:before, &:after{
+			content: "";
+			display: block;
+			position: absolute;
+		    height: 2px;
+		    border-top: 4px solid #7FB2BF;
+		    width: 38%;
+		    top: 40px;
+		    z-index: 0;
+		}
+
+		&:after{
+		    right: 0;
+		}
+	}
+
+	.service-offer{
+		margin-bottom: 50px;
+
+		.img-con{
+			text-align: center;
+			height: 80px;
+			img{
+
+			}
+		}
+		p{
+			font-family: "Gotham-Bold", Open Sans, sans-serif;
+			text-align: center;
+			font-size: 18px;
+			color: #ffffff;
+			padding: 0 20px;
+    		height: 125px;
+    		margin-top: 20px;
+		}
+		.btn-con{
+			text-align: center;
+
+			.setup-btn{
+				border: 1px solid #ffffff;
+				border-radius: 6px;
+				font-family: "Gotham-Bold", Open Sans, sans-serif;
+				font-size: 18px;
+				color: #ffffff;
+				padding: 10px 30px;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: all .2s;
+
+				&:hover{
+					border: 1px solid #0d7ca5;
+					color: #0d7ca5;
+				}
+			}
+		}
+		
+	}
+}
+
+.footer-con{
+	background: #50a7b1;
+	text-align: center;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 99;
+
+	img{
+	}
+}
