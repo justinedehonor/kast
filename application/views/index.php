@@ -15,7 +15,12 @@
 						<div class="business-txt">for your business</div>
 						<div class="btn-con">
 							<a href="#" class="cta-btn learn">learn more</a>
-							<a href="<?php echo site_url('home/explore') ?>" class="cta-btn sign">explore</a>
+							<a href="<?php
+							if($status=="login"){
+								echo site_url('home/explore');
+							}else{
+								echo site_url('profile');
+							} ?>" class="cta-btn sign">explore</a>
 						</div>
 					</div>
 				</div>

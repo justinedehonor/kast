@@ -55,9 +55,9 @@ class Profile extends CI_Controller {
     $this->load->view('live-build-contacts.php');
   }
 
-  // public function message(){
-  //   $this->load->view('live-create-message.php');
-  // }
+  public function message(){
+     $this->load->view('live-create-message.php');
+   }
   //
   // public function sched(){
   //   $this->load->view('live-schedule-broadkast.php');
@@ -112,5 +112,10 @@ class Profile extends CI_Controller {
     $this->db->update('tbl_user', $userInfo);
 
     redirect('/profile');
+  }
+
+  public function logout(){
+    $this->session->sess_destroy();
+    redirect('/home');
   }
 }

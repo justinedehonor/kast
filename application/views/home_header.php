@@ -25,7 +25,11 @@
 				<a href="<?php echo base_url() ?>" class="logo-con">
 					<img src="<?php echo base_url() ?>assets/images/logo.png" alt="logo" />
 				</a>
-				<a href="#" class="login">Log in</a>
+				<a href="<?php
+				if($status=="logout"){
+					  echo site_url("profile/logout");
+				}
+				?>" class="login"><?php echo $status;?></a>
 			</div>
 		</div>
 	</div>
