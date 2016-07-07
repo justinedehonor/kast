@@ -2,7 +2,7 @@
     <strong class="pull-left">KAST Service / BroadKast</strong>
     <span class="pull-right">
         <a href="<?php echo site_url('profile') ?>">Home</a>
-        <a href="">Log Out</a>
+        <a href="<?php echo site_url('profile/logout');?>">Log Out</a>
     </span>
 </header>
 <div class="container-fluid noPadding">
@@ -20,7 +20,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <!-- Brand -->
-                        <a class="navbar-brand" href="<?php echo site_url('Home') ?>"><img src="<?php echo base_url();?>assets/images/img-KAST-logo.png" alt=""></a>
+                        <a class="navbar-brand" href="<?php echo site_url('home') ?>"><img src="<?php echo base_url();?>assets/images/img-KAST-logo.png" alt=""></a>
                     </div>
                     <div class="side-menu-container">
                         <div class="nav navbar-nav">

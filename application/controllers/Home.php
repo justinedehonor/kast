@@ -20,15 +20,37 @@ class Home extends CI_Controller {
 	*/
 	public function index()
 	{
-		$this->load->view('index.php');
+    if(!$this->session->userdata('user_input')){
+      $data['status'] = "login";
+      $this->load->view('index.php',$data);
+    }else{
+      $data['status'] = "logout";
+      $this->load->view('index.php',$data);
+    }
+
 	}
 
 	public function explore(){
-		$this->load->view('explore.php');
+    if(!$this->session->userdata('user_input')){
+      $data['status'] = "login";
+      $this->load->view('explore.php',$data);
+    }else{
+      $data['status'] = "logout";
+      $this->load->view('explore.php',$data);
+    }
+
+	//	$this->load->view('explore.php');
 	}
 
 	public function register(){
-		$this->load->view('register.php');
+    if(!$this->session->userdata('user_input')){
+      $data['status'] = "login";
+      $this->load->view('register.php',$data);
+    }else{
+      $data['status'] = "logout";
+      $this->load->view('register.php',$data);
+    }
+	//	$this->load->view('register.php');
 	}
 
 
@@ -45,6 +67,12 @@ class Home extends CI_Controller {
 		$data['data'] = json_encode($dataFile);
 		//	print_r($data);
 		//die();
+    if(!$this->session->userdata('user_input')){
+      $data['status'] = "login";
+      //$this->load->view('register.php',$data);
+    }else{
+      $data['status'] = "logout";
+    }
 
 		//print_r($dataFile);
 		$this->load->view('confirmation.php', $data);
