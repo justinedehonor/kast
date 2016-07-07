@@ -7,13 +7,15 @@
   <!-- Main Content -->
   <div class="clearfix col-sm-9 col-lg-10 dashboard-main">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 trial buildContacts clearfix">
-        <div class="row">
-          <?php
-          $attributes = array('id' => 'broadcast-trial');
-          echo form_open('profile/broadcast', $attributes) ?>
-          <!-- Step 1 -->
-          <div id="step1">
+
+      <?php
+      $attributes = array('id' => 'broadcast-trial');
+      echo form_open('profile/broadcast', $attributes) ?>
+      <input type="hidden" name="accounttype" value="Trial">
+      <!-- Step 1 -->
+      <div id="step1">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 trial buildContacts clearfix">
+          <div class="row">
             <div class="col-xs-12 col-md-7">
               <ul class="progressBar clearfix">
                 <li class="col-xs-4 active">Build Contacts</li>
@@ -47,8 +49,12 @@
               </div>
             </div>
           </div>
-          <!-- Step 2 -->
-          <div id="step2">
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div id="step2">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 trial createMessage clearfix">
+          <div class="row">
             <div class="col-xs-12 col-md-7">
               <ul class="progressBar clearfix">
                 <li class="col-xs-4">Build Contacts</li>
@@ -92,8 +98,12 @@
               </div>
             </div>
           </div>
-          <!-- Step 3 -->
-          <div id="step3">
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div id="step3">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 trial scheduleBroadkast clearfix">
+          <div class="row">
             <div class="col-xs-12 col-md-7">
               <ul class="progressBar clearfix">
                 <li class="col-xs-4">Build Contacts</li>
@@ -132,10 +142,10 @@
               </div>
             </div>
           </div>
-          <!-- End -->
-          <?php form_close() ?>
         </div>
       </div>
+      <!-- End -->
+      <?php form_close() ?>
     </div>
     <div class="row">
       <div class="col-xs-12 faq">

@@ -76,7 +76,7 @@ class Profile extends CI_Controller {
       'alias' => $alias,
       'message' => $this->input->post('messages'),
       'scheduleDate' => $this->input->post('pickAdate') . " " . $this->input->post('pickAtime'),
-      'accountType' => 'Trial'
+      'accountType' => $this->input->post('accounttype')
     );
 
     $this->db->insert('tbl_broadcast', $broadcast);
