@@ -63,20 +63,36 @@ class Profile extends CI_Controller {
   //   $this->load->view('live-schedule-broadkast.php');
   // }
   //
-  public function broadcastConfirmation(){
-    $this->load->view('live-broadkast-confirmation.php');
+  public function broadcastConfirmation($referenceKey){
+    $query = $this->db->get_where('tbl_user', array('userId' => $this->session->userdata('user_input')));
+    $results = $query->result()[0];
+    foreach ($results as $r => $value) {
+      $data[$r] = $value;
+    }
+    $data['referenceKey'] = $referenceKey;
+    $accountType = $data['accountType'];
+    if($accountType == "Trial") {
+      $this->load->view('trial-broadkast-confirmation.php', $data);
+    } else {
+      $this->load->view('live-broadkast-confirmation.php', $data);
+    }
+
   }
 
   public function broadcast(){
 
     $alias = $this->input->post('alias') == null ? 'KAST' : $this->input->post('alias');
 
+    $dt = new DateTime();
+    $referenceKey = $this->generateRandomString();
     $broadcast = array(
       'userId' => $this->session->userdata('user_input'),
       'alias' => $alias,
       'message' => $this->input->post('messages'),
       'scheduleDate' => $this->input->post('pickAdate') . " " . $this->input->post('pickAtime'),
-      'accountType' => $this->input->post('accounttype')
+      'accountType' => $this->input->post('accounttype'),
+      'timestamp' => $dt->format('Y-m-d H:i:s'),
+      'referenceKey' => $referenceKey
     );
 
     $this->db->insert('tbl_broadcast', $broadcast);
@@ -92,8 +108,9 @@ class Profile extends CI_Controller {
       $this->db->insert('tbl_transaction', $transaction);
     }
     if($this->db->affected_rows() > 0) {
-      redirect('/profile');
+      $this->broadcastConfirmation($referenceKey);
     }
+
   }
   public function savedata()
   {
@@ -113,4 +130,14 @@ class Profile extends CI_Controller {
 
     redirect('/profile');
   }
+
+  function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
 }

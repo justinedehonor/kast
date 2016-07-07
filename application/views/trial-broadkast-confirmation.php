@@ -23,7 +23,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- Brand -->
-                                <a class="navbar-brand" href="#"><img src="images/img-KAST-logo.png" alt=""></a>
+                                <a class="navbar-brand" href="#"><img src="<?php echo base_url(); ?>assets/images/img-KAST-logo.png" alt=""></a>
                             </div>
                             <div class="side-menu-container">
                                 <div class="nav navbar-nav">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <!-- Side Menu -->
-                
+
                 <!-- Main Content -->
                 <div class="clearfix col-sm-9 col-lg-10 dashboard-main">
                    <div class="row">
@@ -53,14 +53,14 @@
                                         <h2>Thank You!</h2>
                                         <h3>YOUR REQUEST HAS BEEN PROCESSED!</h3>
                                         <h4>Your message reference number is</h4>
-                                        <strong class="code">KBK1234</strong>
+                                        <strong class="code"><?php echo $referenceKey; ?></strong>
                                     </span>
                                     <span class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
                                         <a href="#" class="btn hippieBlue">New BroadKast</a>
                                         <a href="#" class="btn glacier">Kast Services</a>
                                     </span>
                                 </div>
-                                <img src="images/img-broadKast-on-hand.png" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/img-broadKast-on-hand.png" alt="">
                             </div>
                         </div>
                    </div>
@@ -72,6 +72,6 @@
                 </div>
             </div>
         </div>
-        
+
 
 <?php include 'includes/dashboard-footer.php'; ?>
