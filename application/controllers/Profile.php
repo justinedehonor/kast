@@ -3,37 +3,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Profile extends CI_Controller {
 
-  public function trialContacts(){
-    $this->load->view('trial-build-contacts.php');
-  }
-
-  public function trialMessage(){
-    $this->load->view('trial-create-message.php');
-  }
-
-  public function trialSched(){
-    $this->load->view('trial-schedule-broadkast.php');
-  }
-
+  // public function trialContacts(){
+  //   $this->load->view('trial-build-contacts.php');
+  // }
+  //
+  // public function trialMessage(){
+  //   $this->load->view('trial-create-message.php');
+  // }
+  //
+  // public function trialSched(){
+  //   $this->load->view('trial-schedule-broadkast.php');
+  // }
+  //
   public function register(){
-    $query = $this->db->get_where('tbl_user', array('userId' => 1));
-    $results = $query->result()[0];
-    foreach ($results as $r => $value) {
-      $data[$r] = $value;
+    if(!$this->session->userdata('user_input')){
+      redirect('/home');
+    }else{
+      $query = $this->db->get_where('tbl_user', array('userId' => $this->session->userdata('user_input')));
+      $results = $query->result()[0];
+      foreach ($results as $r => $value) {
+        $data[$r] = $value;
+      }
+      //echo $data['userId'];
+      $this->load->view('live-account-registration.php', $data);
     }
-    //echo $data['userId'];
-    $this->load->view('live-account-registration.php', $data);
   }
 
   public function index(){
     if(!$this->session->userdata('user_input')){
-        redirect('/home');
+      redirect('/home');
     }else{
-        $query = $this->db->get_where('tbl_user', array('userId' => $this->session->userdata('user_input')));
-        $results = $query->result()[0];
-        foreach ($results as $r => $value) {
-          $data[$r] = $value;
-        }
+      $query = $this->db->get_where('tbl_user', array('userId' => $this->session->userdata('user_input')));
+      $results = $query->result()[0];
+      foreach ($results as $r => $value) {
+        $data[$r] = $value;
+      }
       $accountType = $data['accountType'];
       if($accountType == "Trial") {
         $this->load->view('trial-build-contacts.php');
@@ -51,14 +55,14 @@ class Profile extends CI_Controller {
     $this->load->view('live-build-contacts.php');
   }
 
-  public function message(){
-    $this->load->view('live-create-message.php');
-  }
-
-  public function sched(){
-    $this->load->view('live-schedule-broadkast.php');
-  }
-
+  // public function message(){
+  //   $this->load->view('live-create-message.php');
+  // }
+  //
+  // public function sched(){
+  //   $this->load->view('live-schedule-broadkast.php');
+  // }
+  //
   public function broadcastConfirmation(){
     $this->load->view('live-broadkast-confirmation.php');
   }
@@ -68,7 +72,7 @@ class Profile extends CI_Controller {
     $alias = $this->input->post('alias') == null ? 'KAST' : $this->input->post('alias');
 
     $broadcast = array(
-      'userId' => 1,
+      'userId' => $this->session->userdata('user_input'),
       'alias' => $alias,
       'message' => $this->input->post('messages'),
       'scheduleDate' => $this->input->post('pickAdate') . " " . $this->input->post('pickAtime'),
@@ -104,7 +108,7 @@ class Profile extends CI_Controller {
       'TIN' => $this->input->post('tin'),
       'accountType' => 'Live'
     );
-    $this->db->where('userId', 1);
+    $this->db->where('userId', $this->session->userdata('user_input'));
     $this->db->update('tbl_user', $userInfo);
 
     redirect('/profile');
