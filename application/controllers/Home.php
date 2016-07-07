@@ -67,6 +67,8 @@ class Home extends CI_Controller {
 	$this->db->insert('tbl_user', $dataSave);
 	if($this->db->affected_rows() > 0)
 	{
+
+    $this->session->set_userdata('user_input',$this->db->insert_id());
     redirect('/profile');
 		//$this->load->view('trial-build-contacts.php');
 		//$this->load->view('thankyou-page');

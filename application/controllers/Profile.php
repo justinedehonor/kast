@@ -26,12 +26,25 @@ class Profile extends CI_Controller {
   }
 
   public function index(){
-    $accountType = "Live";
-    if($accountType == "Trial") {
-      $this->load->view('trial-build-contacts.php');
-    } else {
-      $this->load->view('live-account-home.php');
+    if(!$this->session->userdata('user_input')){
+        redirect('/home');
+    }else{
+        $query = $this->db->get_where('tbl_user', array('userId' => $this->session->userdata('user_input')));
+        $results = $query->result()[0];
+        foreach ($results as $r => $value) {
+          $data[$r] = $value;
+        }
+      $accountType = $data['accountType'];
+      if($accountType == "Trial") {
+        $this->load->view('trial-build-contacts.php');
+      } else {
+        $this->load->view('live-account-home.php');
+      }
     }
+
+    // print_r($this->session->userdata('user_input'));
+    // die();
+
   }
 
   public function contacts(){
