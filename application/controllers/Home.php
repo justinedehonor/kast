@@ -53,6 +53,17 @@ class Home extends CI_Controller {
 	//	$this->load->view('register.php');
 	}
 
+	public function login(){
+    if(!$this->session->userdata('user_input')){
+      $data['status'] = "login";
+      $this->load->view('login.php',$data);
+    }else{
+      $data['status'] = "logout";
+      $this->load->view('login.php',$data);
+    }
+	//	$this->load->view('register.php');
+	}
+
 
 	public function confirmation(){
 		//echo "wew";

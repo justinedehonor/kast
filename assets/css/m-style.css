@@ -137,6 +137,9 @@
     width: 100%; }
 
   .services-con .title:before, .services-con .title:after {
-    width: 10%; } }
+    width: 10%; }
+
+  .main-con .center-con .text-con.login-con .title {
+    padding: 0; } }
 
 /*# sourceMappingURL=m-style.css.map */

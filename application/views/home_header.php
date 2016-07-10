@@ -28,6 +28,8 @@
 				<a href="<?php
 				if($status=="logout"){
 					  echo site_url("profile/logout");
+				}else{
+					 echo site_url("home/login");
 				}
 				?>" class="login"><?php echo $status;?></a>
 			</div>
