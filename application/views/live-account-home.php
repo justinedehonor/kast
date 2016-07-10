@@ -17,13 +17,13 @@
                         <div class="col-xs-12 col-sm-6 col-lg-4">
                            <span class="communityBuilding">
                                <h4>Community Building</h4>
-                               <a href="" class="btn neptune">Set Up</a>
+                               <a href="<?php echo site_url('profile/community') ?>" class="btn neptune">Set Up</a>
                            </span>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
                            <span class="feedback">
                                <h4>Feedback</h4>
-                               <a href="" class="btn neptune">Set Up</a>
+                               <a href="<?php echo site_url('profile/feedback') ?>" class="btn neptune">Set Up</a>
                            </span>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">

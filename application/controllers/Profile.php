@@ -29,6 +29,22 @@ class Profile extends CI_Controller {
     }
   }
 
+  public function community(){
+    if(!$this->session->userdata('user_input')){
+      redirect('/home');
+    }else{
+      $this->load->view('community.php');
+    }
+  }
+
+  public function feedback(){
+    if(!$this->session->userdata('user_input')){
+      redirect('/home');
+    }else{
+      $this->load->view('feedback.php');
+    }
+  }
+
   public function index(){
     if(!$this->session->userdata('user_input')){
       redirect('/home');
