@@ -11,16 +11,18 @@
                             <h4>feedback</h4>
                         </div>
                         <div class="col-md-10 col-md-offset-1 col-lg-9 col-lg-offset-1 live buildContacts clearfix com-build feedback">
-                            <form action="">
+                            <?php 
+                                echo form_open('profile/feedback_submit');
+                            ?>
                             <div class="row">
                                 
                                 <div class="col-xs-12 col-md-6">
-                                   <label for="">Your Message</label>
-                                   <input type="text">
-                                   <label for="">Who will pay for the broadKAST?</label>
-                                   <input type="text">
+                                   <label for="" >Your Message</label>
+                                   <input type="text" name="message">
+                                   <label for="" >Who will pay for the broadKAST?</label>
+                                   <input type="text" name="willPay">
                                    <label for="">Confirmation Message</label>
-                                   <textarea rows="3"></textarea>
+                                   <textarea rows="3"  name="confirmMessage"></textarea>
                                 </div>
                                 <div class="col-xs-12 col-md-5 col-md-offset-1">
                                     <label for="">Do yo want to give load incentive?</label>
@@ -29,23 +31,26 @@
                                         <button class="btn hippieBlue auto-width">Yes</button>
                                     </div>
                                     <label for="">Choose Provider / Telco</label>
-                                    <select class="white">
-                                        <option>Globe</option>
+                                    <select class="white" name="provider">
+                                        <option value="Globe">Globe</option>
+                                        <option value="Smart">Smart</option>
+                                        
                                     </select>
                                     <div class="date-con small-con">
                                         <label for="">Load</label>
-                                        <select class="date white">
-                                            <option>P30</option>
+                                        <select class="date white" name="load">
+                                            <option value="P30">P30</option>
+                                            <option value="P60">P60</option>
                                         </select>
                                     </div>
                                     <div class="date-con big-con">
                                         <label for="">Launch Date</label>
-                                        <input type="text" class="date white" id="pickAdate" placeholder="mm/dd/yyyy">
+                                        <input type="text" class="date white" id="pickAdate" name="launchDate" placeholder="mm/dd/yyyy">
                                     </div>
                                     <input class="btn hippieBlue large-btn" type="submit" value="Submit">
                                 </div>
                             </div>
-                            </form>
+                            <?php echo form_close();?>
                         </div>
                    </div>
                    

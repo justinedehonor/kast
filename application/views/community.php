@@ -11,19 +11,21 @@
                             <h4>Community Building</h4>
                         </div>
                         <div class="col-md-10 col-md-offset-1 col-lg-9 col-lg-offset-1 live buildContacts clearfix com-build">
-                            <form action="">
+                             <?php 
+                                echo form_open('profile/community_submit');
+                            ?>
                             <div class="row">
                                 
                                 <div class="col-xs-12 col-md-6">
                                    <label for="">Your Message</label>
-                                   <input type="text">
+                                   <input type="text" name="message">
                                    <label for="">Who will pay for the broadKAST?</label>
-                                   <input type="text">
+                                   <input type="text" name="willPay">
                                    <label for="">Confirmation Message Opt in</label>
-                                   <textarea rows="3"></textarea>
+                                   <textarea rows="3" name="confirmMessageIn"></textarea>
                                    <div class="remain-txt"><span>160</span>/160</div>
-                                   <label for="">Confirmation Message Opt in</label>
-                                   <textarea rows="3"></textarea>
+                                   <label for="">Confirmation Message Opt out</label>
+                                   <textarea rows="3" name="confirmMessageOut"></textarea>
                                    <div class="remain-txt"><span>160</span>/160</div>
                                 </div>
                                 <div class="col-xs-12 col-md-5 col-md-offset-1">
@@ -33,23 +35,25 @@
                                         <button class="btn hippieBlue auto-width">Yes</button>
                                     </div>
                                     <label for="">Choose Provider / Telco</label>
-                                    <select>
-                                        <option>Globe</option>
+                                    <select name="provider">
+                                        <option value="Globe">Globe</option>
+                                        <option value="Smart">Smart</option>
                                     </select>
                                     <div class="date-con small-con">
                                         <label for="">Load</label>
-                                        <select class="date">
-                                            <option>P30</option>
+                                        <select class="date" name="load">
+                                            <option value="P30">P30</option>
+                                             <option value="P60">P60</option>
                                         </select>
                                     </div>
                                     <div class="date-con big-con">
                                         <label for="">Launch Date</label>
-                                        <input type="text" class="date gray" id="pickAdate" placeholder="mm/dd/yyyy">
+                                        <input type="text" class="date gray" id="pickAdate" name="launchDate"placeholder="mm/dd/yyyy">
                                     </div>
                                     <input class="btn hippieBlue large-btn" type="submit" value="Submit">
                                 </div>
                             </div>
-                            </form>
+                           <?php echo form_close();?>
                         </div>
                    </div>
                    
