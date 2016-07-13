@@ -11,7 +11,7 @@
                         <div class="col-xs-12 col-sm-6 col-lg-4">
                            <span class="broadkast">
                                <h4>BroadKast</h4>
-                               <a href="<?php echo site_url('profile/contacts') ?>" class="btn neptune">BroadKast now</a>
+                               <a href="<?php echo site_url('profile/reach') ?>" class="btn neptune">BroadKast now</a>
                            </span>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
@@ -29,19 +29,19 @@
                         <div class="col-xs-12 col-sm-6 col-lg-4">
                            <span class="videoBroadkast">
                                <h4>Video BroadKast</h4>
-                               <a href="" class="btn neptune">Set Up</a>
+                               <a href="<?php echo site_url('profile/video') ?>" class="btn neptune">Set Up</a>
                            </span>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
                            <span class="promos">
                                <h4>Promos</h4>
-                               <a href="" class="btn neptune">Set Up</a>
+                               <a href="<?php echo site_url('profile/promo') ?>" class="btn neptune">Set Up</a>
                            </span>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-lg-4">
                            <span class="loadDisbursement">
                                <h4>Load Disbursement</h4>
-                               <a href="" class="btn neptune">Set Up</a>
+                               <a href="<?php echo site_url('profile/promo') ?>" class="btn neptune">Set Up</a>
                            </span>
                         </div>
                    </div>

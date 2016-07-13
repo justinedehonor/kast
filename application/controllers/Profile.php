@@ -45,6 +45,86 @@
       }
     }
 
+    public function video(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+        $this->load->view('live-video-broadkast.php');
+      }
+    }
+
+    public function send_sms(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+        $data['code'] = array('code'=>'sms');
+        $dataFile = array(
+          'campaignName' 			   => $this->input->post("campaignName"),
+          'purpose' 			       => $this->input->post("purpose"),
+          'campaignStart' 		   => $this->input->post("campaignStart"),
+          'campaignEnd' 	       => $this->input->post("campaignEnd"),
+          'campaignEnd' 	       => $this->input->post("campaignEnd"),
+          'reach' 	             => $this->input->post("reach"),
+          'videoElement' 	       => $this->input->post("videoElement"),
+          'caption' 	           => $this->input->post("caption"),
+          'videoUrl' 	           => $this->input->post("videoUrl"),
+        );
+        $data['data'] = json_encode($dataFile);
+        $this->load->view('live-video-broadkast-2.php',$data);
+      }
+    }
+
+    public function contacts(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+          $this->load->view('live-build-contacts.php');
+      }
+    }
+
+    public function hyper(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+          $this->load->view('live-hyper-targeted-contacts.php');
+      }
+    }
+
+    public function location(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+          $this->load->view('live-location-based-contacts.php');
+      }
+    }
+
+    public function promo(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+          $this->load->view('promo.php');
+      }
+    }
+
+
+
+    public function thankyou(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+          $this->load->view('live-hyper-targeted-confirmation.php');
+      }
+    }
+
+
+    public function reach(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+          $this->load->view('choose-your-reach.php');
+      }
+    }
+
 
     public function feedback_submit(){
       if(!$this->session->userdata('user_input')){
@@ -60,18 +140,18 @@
         'launchDate'          => $this->input->post('launchDate')
 
       );
-    
+
         $this->db->insert('tbl_feedback', $dataSave);
         if($this->db->affected_rows() > 0)
         {
 
           //$this->session->set_userdata('user_input',$this->db->insert_id());
-          redirect('/profile');
+          redirect('/profile/thankyou');
           //$this->load->view('trial-build-contacts.php');
           //$this->load->view('thankyou-page');
         }
       }
-      
+
     }
 
      public function community_submit(){
@@ -89,19 +169,91 @@
         'launchDate'                => $this->input->post('launchDate')
 
       );
-    
+
         $this->db->insert('tbl_community', $dataSave);
         if($this->db->affected_rows() > 0)
         {
 
           //$this->session->set_userdata('user_input',$this->db->insert_id());
-          redirect('/profile');
+          redirect('/profile/thankyou');
           //$this->load->view('trial-build-contacts.php');
           //$this->load->view('thankyou-page');
         }
       }
-      
+
     }
+
+    public function promo_submit(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+        $dataSave = Array(
+        'promoType'           => $this->input->post('promoType'),
+        'promoTitle'          => $this->input->post('promoTitle') ,
+        'provider'            => $this->input->post('provider') ,
+        'promoStart'          => $this->input->post('promoStart') ,
+        'promoEnd'            => $this->input->post('promoEnd') ,
+        'confirmationMessage' => $this->input->post('confirmationMessage') ,
+        'keyword'             => $this->input->post('keyword'),
+        'denomination'        => $this->input->post('denomination'),
+        'launchDate'          => $this->input->post('launchDate'),
+        'raffleEntry'         => $this->input->post('rafle-entry'),
+
+      );
+
+        $this->db->insert('tbl_promo', $dataSave);
+        if($this->db->affected_rows() > 0)
+        {
+
+          //$this->session->set_userdata('user_input',$this->db->insert_id());
+          redirect('/profile/thankyou');
+          //$this->load->view('trial-build-contacts.php');
+          //$this->load->view('thankyou-page');
+        }
+      }
+
+    }
+
+
+    public function video_submit(){
+      if(!$this->session->userdata('user_input')){
+        redirect('/home');
+      }else{
+
+
+        $data = $this->input->post('data');
+        $data = json_decode($data);
+        //print_r($data);
+
+        //Saving data to database
+        $dataSave = Array(
+        'campaignName'=> $data->campaignName,
+        'purpose' => $data->purpose,
+        'campaignStart' => $data->campaignStart,
+        'campaignEnd' => 	$data->campaignEnd,
+        'reach' => 	$data->reach,
+        'videoElement' => 	$data->videoElement,
+        'caption' => 	$data->caption,
+        'videoUrl' => 	$data->videoUrl,
+        'promoSenderName' => $this->input->post('promoSenderName'),
+        'promoSenderMessage' => $this->input->post('promoSenderMessage'),
+      );
+
+
+
+        $this->db->insert('tbl_video_broadcast', $dataSave);
+        if($this->db->affected_rows() > 0)
+        {
+
+          //$this->session->set_userdata('user_input',$this->db->insert_id());
+          redirect('/profile/thankyou');
+          //$this->load->view('trial-build-contacts.php');
+          //$this->load->view('thankyou-page');
+        }
+      }
+
+    }
+
 
 
     public function index(){
@@ -126,13 +278,8 @@
 
     }
 
-    public function contacts(){
-      $this->load->view('live-build-contacts.php');
-    }
 
-    public function message(){
-       $this->load->view('live-create-message.php');
-     }
+
     //
     // public function sched(){
     //   $this->load->view('live-schedule-broadkast.php');

@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* line 6, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+html, body {
+  height: 100%; }
+
+/* line 7, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+* {
+  outline: none; }
+
+/* line 8, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+body {
+  font: 400 14px/1.6em "Montserrat", Arial, Sans-serif;
+  color: #7e7e7e; }
+  /* line 9, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+  body.dashboard {
+    background: #eff1ee; }
+    /* line 10, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard header {
+      position: relative;
+      z-index: 10;
+      padding: 15px;
+      color: #fff;
+      background: #369fb5;
+      background: -moz-linear-gradient(left, #369fb5 0%, #a0c7c6 40%);
+      background: -webkit-linear-gradient(left, #369fb5 0%, #a0c7c6 40%);
+      background: linear-gradient(to right, #369fb5 0%, #a0c7c6 40%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#369fb5', endColorstr='#a0c7c6',GradientType=1 ); }
+      /* line 15, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard header strong {
+        font-weight: 400; }
+      /* line 16, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard header span > a {
+        margin-left: 15px; }
+    /* line 18, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard footer {
+      background: #50a7b1 url(../images/bg-effect-footer.jpg) bottom right no-repeat;
+      background-size: auto;
+      color: #fff;
+      padding: 20px 0;
+      position: relative;
+      top: -6px;
+      z-index: 10; }
+      /* line 19, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard footer ul.links {
+        padding: 15px 0;
+        float: left;
+        list-style: none;
+        margin: 0; }
+        /* line 20, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+        body.dashboard footer ul.links li {
+          float: left; }
+          /* line 20, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+          body.dashboard footer ul.links li a {
+            margin: 0 15px 0 0; }
+      /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard footer span.brand {
+        padding: 0;
+        float: right;
+        margin: 10px 0 0 0; }
+        /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+        body.dashboard footer span.brand a {
+          margin: 0; }
+          /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+          body.dashboard footer span.brand a:after {
+            content: none; }
+          /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+          body.dashboard footer span.brand a img {
+            width: 100%; }
+    /* line 25, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard header a, body.dashboard footer a {
+      text-transform: uppercase;
+      color: #fff;
+      margin-left: 15px;
+      position: relative; }
+      /* line 26, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard header a:hover, body.dashboard footer a:hover {
+        color: inherit;
+        text-decoration: none; }
+      /* line 27, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard header a:after, body.dashboard footer a:after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #fff;
+        transition: width 0.2s ease-in-out; }
+      /* line 28, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard header a:hover:after, body.dashboard footer a:hover:after {
+        width: 100%; }
+    /* line 31, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard h1, body.dashboard h2, body.dashboard h3, body.dashboard h4, body.dashboard h5, body.dashboard h6 {
+      margin-top: 0; }
+    /* line 33, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard *:focus {
+      outline: none; }
+    /* line 34, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard .noPadding {
+      padding: 0; }
+    /* line 35, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard .noMargin {
+      margin: 0; }
+    /* line 36, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard .border {
+      border: 1px solid; }
+    /* line 38, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard .btn {
+      border-radius: 5px;
+      padding: 7px 15px;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 400;
+      opacity: 1;
+      transition: all 0.2s ease-in-out; }
+      /* line 39, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .btn:hover {
+        opacity: 0.8;
+        color: #fff; }
+      /* line 40, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .btn:active {
+        top: 2px;
+        box-shadow: none; }
+      /* line 42, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .btn.aqua {
+        background-color: #abd8de; }
+      /* line 43, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .btn.glacier {
+        background-color: #80b4c2;
+        color: #fff; }
+      /* line 44, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .btn.hippieBlue {
+        background-color: #50a7b1; }
+      /* line 45, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .btn.neptune {
+        background-color: #8dc0c3; }
+      /* line 46, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .btn.powderBlue {
+        background-color: #b2e3e8;
+        color: #fff; }
+    /* line 49, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard .batchUpload {
+      position: relative; }
+      /* line 50, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .batchUpload .inputfile {
+        display: none; }
+        /* line 51, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+        body.dashboard .batchUpload .inputfile + label {
+          width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          cursor: pointer;
+          display: inline-block;
+          background-color: #fff;
+          border-radius: 3px;
+          padding: 9px 15px;
+          height: auto;
+          transition: opacity 0.2s ease-in-out; }
+          /* line 52, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+          body.dashboard .batchUpload .inputfile + label span {
+            padding: 9px 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #50a7b1;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; }
+          /* line 53, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+          body.dashboard .batchUpload .inputfile + label:hover {
+            opacity: 0.8; }
+      /* line 56, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .batchUpload .inputfile-6 + label {
+        position: relative; }
+      /* line 57, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard .batchUpload .inputfile-6 + label span {
+        padding: 9px 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #50a7b1; }
+
+@media screen and (max-width: 767px) {
+  /* line 64, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+  body.dashboard footer {
+    text-align: center;
+    padding: 15px 0; }
+    /* line 65, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard footer ul.links {
+      width: 100%;
+      padding-top: 0; }
+      /* line 66, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+      body.dashboard footer ul.links li {
+        float: none;
+        margin: 5px 0; }
+    /* line 68, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST/css/scss/_globalClasses.scss */
+    body.dashboard footer span.brand {
+      margin: 0;
+      clear: both;
+      float: none;
+      display: inline-block;
+      margin: 0 auto 10px auto; } }
+
+/*# sourceMappingURL=_globalClasses.css.map */

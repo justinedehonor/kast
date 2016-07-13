@@ -1,15 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* line 6, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
 html, body {
   height: 100%; }
 
+/* line 7, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
 * {
   outline: none; }
 
+/* line 8, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
 body {
   font: 400 14px/1.6em "Montserrat", Arial, Sans-serif;
   color: #7e7e7e; }
+  /* line 9, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
   body.dashboard {
     background: #eff1ee; }
+    /* line 10, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard header {
       position: relative;
       z-index: 10;
@@ -20,10 +25,13 @@ body {
       background: -webkit-linear-gradient(left, #369fb5 0%, #a0c7c6 40%);
       background: linear-gradient(to right, #369fb5 0%, #a0c7c6 40%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#369fb5', endColorstr='#a0c7c6',GradientType=1 ); }
+      /* line 15, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard header strong {
         font-weight: 400; }
+      /* line 16, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard header span > a {
         margin-left: 15px; }
+    /* line 18, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard footer {
       background: #50a7b1 url(../images/bg-effect-footer.jpg) bottom right no-repeat;
       background-size: auto;
@@ -32,33 +40,43 @@ body {
       position: relative;
       top: -6px;
       z-index: 10; }
+      /* line 19, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard footer ul.links {
         padding: 15px 0;
         float: left;
         list-style: none;
         margin: 0; }
+        /* line 20, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
         body.dashboard footer ul.links li {
           float: left; }
+          /* line 20, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
           body.dashboard footer ul.links li a {
             margin: 0 15px 0 0; }
+      /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard footer span.brand {
         padding: 0;
         float: right;
         margin: 10px 0 0 0; }
+        /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
         body.dashboard footer span.brand a {
           margin: 0; }
+          /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
           body.dashboard footer span.brand a:after {
             content: none; }
+          /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
           body.dashboard footer span.brand a img {
             width: 100%; }
+    /* line 25, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard header a, body.dashboard footer a {
       text-transform: uppercase;
       color: #fff;
       margin-left: 15px;
       position: relative; }
+      /* line 26, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard header a:hover, body.dashboard footer a:hover {
         color: inherit;
         text-decoration: none; }
+      /* line 27, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard header a:after, body.dashboard footer a:after {
         content: '';
         position: absolute;
@@ -68,19 +86,26 @@ body {
         height: 3px;
         border-radius: 2px;
         background-color: #fff;
-        transition: width .2s ease-in-out; }
+        transition: width 0.2s ease-in-out; }
+      /* line 28, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard header a:hover:after, body.dashboard footer a:hover:after {
         width: 100%; }
+    /* line 31, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard h1, body.dashboard h2, body.dashboard h3, body.dashboard h4, body.dashboard h5, body.dashboard h6 {
       margin-top: 0; }
+    /* line 33, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard *:focus {
       outline: none; }
+    /* line 34, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard .noPadding {
       padding: 0; }
+    /* line 35, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard .noMargin {
       margin: 0; }
+    /* line 36, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard .border {
       border: 1px solid; }
+    /* line 38, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard .btn {
       border-radius: 5px;
       padding: 7px 15px;
@@ -92,29 +117,39 @@ body {
       color: #fff;
       font-weight: 400;
       opacity: 1;
-      transition: all .2s ease-in-out; }
+      transition: all 0.2s ease-in-out; }
+      /* line 39, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .btn:hover {
         opacity: 0.8;
         color: #fff; }
+      /* line 40, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .btn:active {
         top: 2px;
         box-shadow: none; }
+      /* line 42, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .btn.aqua {
         background-color: #abd8de; }
+      /* line 43, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .btn.glacier {
         background-color: #80b4c2;
         color: #fff; }
+      /* line 44, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .btn.hippieBlue {
         background-color: #50a7b1; }
+      /* line 45, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .btn.neptune {
         background-color: #8dc0c3; }
+      /* line 46, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .btn.powderBlue {
         background-color: #b2e3e8;
         color: #fff; }
+    /* line 49, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard .batchUpload {
       position: relative; }
+      /* line 50, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .batchUpload .inputfile {
         display: none; }
+        /* line 51, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
         body.dashboard .batchUpload .inputfile + label {
           width: 100%;
           text-overflow: ellipsis;
@@ -125,7 +160,8 @@ body {
           border-radius: 3px;
           padding: 9px 15px;
           height: auto;
-          transition: opacity .2s ease-in-out; }
+          transition: opacity 0.2s ease-in-out; }
+          /* line 52, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
           body.dashboard .batchUpload .inputfile + label span {
             padding: 9px 15px;
             text-transform: uppercase;
@@ -134,10 +170,13 @@ body {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden; }
+          /* line 53, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
           body.dashboard .batchUpload .inputfile + label:hover {
             opacity: 0.8; }
+      /* line 56, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .batchUpload .inputfile-6 + label {
         position: relative; }
+      /* line 57, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard .batchUpload .inputfile-6 + label span {
         padding: 9px 15px;
         text-transform: uppercase;
@@ -145,22 +184,28 @@ body {
         color: #50a7b1; }
 
 @media screen and (max-width: 767px) {
+  /* line 64, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
   body.dashboard footer {
     text-align: center;
     padding: 15px 0; }
+    /* line 65, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard footer ul.links {
       width: 100%;
       padding-top: 0; }
+      /* line 66, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
       body.dashboard footer ul.links li {
         float: none;
         margin: 5px 0; }
+    /* line 68, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_globalClasses.scss */
     body.dashboard footer span.brand {
       margin: 0;
       clear: both;
       float: none;
       display: inline-block;
       margin: 0 auto 10px auto; } }
+
 /*Start Main Stylesheet*/
+/* line 5, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
 .dashboard-container {
   padding: 0;
   min-height: 100%;
@@ -168,20 +213,25 @@ body {
   position: relative;
   display: inline-block;
   background-color: #8dc0c3; }
+  /* line 8, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .side-menu .side-menu-container > div {
     background: url(../images/bg-effect-sidebar.jpg) bottom center no-repeat;
     background-size: cover; }
+  /* line 9, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .side-menu .side-menu-container p {
     margin-bottom: 0;
     font-size: 120%; }
+  /* line 10, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .side-menu .side-menu-container a {
     color: #fff;
     position: relative;
     text-transform: uppercase;
     display: inline-block; }
+    /* line 11, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .side-menu .side-menu-container a:hover {
       color: inherit;
       text-decoration: none; }
+    /* line 12, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .side-menu .side-menu-container a:after {
       content: '';
       position: absolute;
@@ -191,34 +241,43 @@ body {
       height: 2px;
       border-radius: 2px;
       background-color: #fff;
-      transition: width .2s ease-in-out; }
+      transition: width 0.2s ease-in-out; }
+    /* line 13, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .side-menu .side-menu-container a:hover:after {
       width: 100%; }
+    /* line 14, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .side-menu .side-menu-container a.btn {
       display: block;
       color: #3e848c;
       opacity: 1;
       padding: 10px;
       font-weight: 700; }
+      /* line 15, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .side-menu .side-menu-container a.btn:hover {
         background: #50a7b1;
         color: #fff; }
+      /* line 16, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .side-menu .side-menu-container a.btn:after {
         content: none; }
+    /* line 18, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .side-menu .side-menu-container a.myAccount {
       background: url(../images/ico-myAccount.png) top center no-repeat;
       background-size: 80%;
       padding-top: 85px; }
+    /* line 19, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .side-menu .side-menu-container a.senderID {
       background: url(../images/ico-senderID.png) top center no-repeat;
       background-size: 80%;
       padding-top: 70px; }
+  /* line 23, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main {
     background: url(../images/bgRepeat-dashboard-main.jpg) repeat;
     position: relative;
     height: 100%; }
+    /* line 23, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .modal-open .modal {
       z-index: 999; }
+    /* line 24, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main:before {
       content: '';
       position: absolute;
@@ -229,45 +288,57 @@ body {
       z-index: -1;
       left: 0;
       bottom: 0; }
+    /* line 26, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .homeSettings {
       margin-bottom: 15px;
       padding-left: 15px; }
+      /* line 27, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .homeSettings > div {
         margin: 15px 0 0 0;
         padding-left: 0; }
+        /* line 28, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .homeSettings > div > span {
           display: block;
           background: rgba(255, 255, 255, 0.5);
           text-align: center;
           padding: 50px 20px;
           border-radius: 2px;
-          transition: background .5s ease-in-out; }
+          transition: background 0.5s ease-in-out; }
+          /* line 29, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span.broadkast h4:before {
             background: url(../images/home-ico-broadkast.png) top center no-repeat;
             background-size: 120px; }
+          /* line 30, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span.communityBuilding h4:before {
             background: url(../images/home-ico-communityBuilding.png) top center no-repeat;
             background-size: 120px; }
+          /* line 31, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span.feedback h4:before {
             background: url(../images/home-ico-feedback.png) top center no-repeat;
             background-size: 120px; }
+          /* line 32, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span.videoBroadkast h4:before {
             background: url(../images/home-ico-videoBroadkast.png) top center no-repeat;
             background-size: 120px; }
+          /* line 33, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span.promos h4:before {
             background: url(../images/home-ico-promos.png) top center no-repeat;
             background-size: 120px; }
+          /* line 34, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span.loadDisbursement h4:before {
             background: url(../images/home-ico-loadDisbursement.png) top center no-repeat;
             background-size: 120px; }
+          /* line 35, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span:hover {
             background: white; }
+          /* line 36, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span h4 {
             color: #50a7b1;
             text-transform: uppercase;
             position: relative;
             padding-top: 140px;
             font-weight: 700; }
+            /* line 37, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
             .dashboard-container .dashboard-main .homeSettings > div > span h4:before {
               content: '';
               position: absolute;
@@ -276,36 +347,47 @@ body {
               height: 120px;
               left: 50%;
               margin-left: -60px; }
+          /* line 39, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .homeSettings > div > span .btn {
             padding: 3px 30px; }
+    /* line 45, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration > .registerForm, .dashboard-container .dashboard-main .accountRegistration > .confirmation {
       margin-top: 40px;
       margin-bottom: 40px; }
+    /* line 46, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration h4 {
       font-size: 170%;
       font-weight: 700;
       color: #50a7b1;
       margin-bottom: 20px; }
+    /* line 47, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration h3 {
       font-size: 250%;
       font-weight: 700; }
+    /* line 48, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration p, .dashboard-container .dashboard-main .accountRegistration small {
       display: block; }
+    /* line 49, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration p {
       font-size: 120%;
       line-height: 160%; }
+    /* line 50, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration small {
       font-size: 100%; }
+    /* line 51, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration .btn {
       color: #fff;
       margin-top: 15px; }
+    /* line 53, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration > .registerForm > .row div > span {
       display: block;
       margin-bottom: 10px; }
+      /* line 54, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .accountRegistration > .registerForm > .row div > span label {
         font-weight: 400;
         display: block;
         margin-bottom: 3px; }
+      /* line 55, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .accountRegistration > .registerForm > .row div > span .inputStyles, .dashboard-container .dashboard-main .accountRegistration > .registerForm > .row div > span input, .dashboard-container .dashboard-main .accountRegistration > .registerForm > .row div > span textarea {
         display: block;
         width: 100%;
@@ -316,22 +398,26 @@ body {
         max-height: 111px;
         min-width: 100%;
         color: #414141; }
+    /* line 58, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .accountRegistration > .registerForm input[type="submit"] {
       margin-top: 5px;
       width: 100%;
       font-size: 120%;
       font-weight: 700; }
+    /* line 61, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .faq {
       padding: 40px 15px;
       background-color: #b2e3e8;
       color: #fff;
       text-align: center; }
+      /* line 62, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .faq p {
         margin-bottom: 0;
         font-size: 120%;
         display: inline-block;
         position: relative;
         padding: 0 20px 0 75px; }
+        /* line 63, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .faq p:before {
           content: '';
           background: url(../images/ico-FAQs.png) top center no-repeat;
@@ -342,28 +428,36 @@ body {
           height: 60px;
           top: 50%;
           margin-top: -30px; }
+      /* line 65, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .faq .btn {
         text-transform: none;
         padding: 8px 40px;
         font-size: 120%; }
+    /* line 68, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .trial, .dashboard-container .dashboard-main .live {
       margin-top: 40px;
       margin-bottom: 40px; }
+      /* line 69, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial .row > div, .dashboard-container .dashboard-main .live .row > div {
         margin-bottom: 40px; }
+        /* line 69, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial .row > div.pull-right, .dashboard-container .dashboard-main .live .row > div.pull-right {
           margin-top: 30px; }
+        /* line 69, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial .row > div:last-child, .dashboard-container .dashboard-main .live .row > div:last-child {
           margin-bottom: 0; }
+      /* line 70, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial h3, .dashboard-container .dashboard-main .live h3 {
         text-transform: uppercase;
         color: #50a7b1;
         font-weight: 700;
         margin-bottom: 20px; }
+      /* line 71, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial small, .dashboard-container .dashboard-main .live small {
         display: block;
         clear: both;
         text-align: center; }
+      /* line 72, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial input[type="text"], .dashboard-container .dashboard-main .trial button, .dashboard-container .dashboard-main .live input[type="text"], .dashboard-container .dashboard-main .live button {
         display: block;
         width: 100%;
@@ -372,14 +466,58 @@ body {
         border: none;
         text-align: center;
         font-size: 120%; }
+      /* line 73, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial input[type="text"], .dashboard-container .dashboard-main .live input[type="text"] {
         background: #fff;
         color: #414141;
         margin-top: 15px; }
+        /* line 73, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial input[type="text"]:disabled, .dashboard-container .dashboard-main .live input[type="text"]:disabled {
           background: #d1d1d1;
           color: #4b4b4b;
           font-weight: bold; }
+      /* line 74, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .trial textarea, .dashboard-container .dashboard-main .live textarea {
+        padding: 15px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 5px;
+        resize: none; }
+      /* line 75, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .trial .dropdown, .dashboard-container .dashboard-main .live .dropdown {
+        display: block;
+        width: 100%;
+        background: #fff url(../images/caret-down.png) 96% center no-repeat;
+        background-size: 16px;
+        font-size: 120%;
+        color: #50a7b1; }
+        /* line 76, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial .dropdown select, .dashboard-container .dashboard-main .live .dropdown select {
+          cursor: pointer;
+          background: transparent;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          width: 100%;
+          padding: 10px 15px;
+          border: none;
+          transition: all 0.2s ease-in-out; }
+          /* line 77, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+          .dashboard-container .dashboard-main .trial .dropdown select:hover, .dashboard-container .dashboard-main .live .dropdown select:hover {
+            opacity: 0.8; }
+          /* line 78, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+          .dashboard-container .dashboard-main .trial .dropdown select > option, .dashboard-container .dashboard-main .live .dropdown select > option {
+            text-align: center;
+            transition: all 0.2s ease-in-out; }
+      /* line 82, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .trial input.date, .dashboard-container .dashboard-main .live input.date {
+        background: #fff url(../images/ico-calendar.png) 95% center no-repeat;
+        background-size: 16px; }
+      /* line 83, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .trial input.time, .dashboard-container .dashboard-main .live input.time {
+        background: #fff url(../images/ico-time.png) 95% center no-repeat;
+        background-size: 16px; }
+      /* line 85, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial ul.progressBar, .dashboard-container .dashboard-main .live ul.progressBar {
         list-style: none;
         margin: 0;
@@ -387,6 +525,7 @@ body {
         width: 100%;
         display: block;
         position: relative; }
+        /* line 86, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial ul.progressBar:before, .dashboard-container .dashboard-main .live ul.progressBar:before {
           content: '';
           position: absolute;
@@ -395,6 +534,7 @@ body {
           height: 3px;
           border-top: #b2e3e8 3px dashed;
           top: 41px; }
+        /* line 87, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial ul.progressBar li, .dashboard-container .dashboard-main .live ul.progressBar li {
           float: left;
           text-align: center;
@@ -404,6 +544,7 @@ body {
           max-width: 28% !important;
           position: relative;
           padding: 90px 0 0 0; }
+          /* line 88, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial ul.progressBar li:before, .dashboard-container .dashboard-main .live ul.progressBar li:before {
             position: absolute;
             text-align: center;
@@ -418,30 +559,40 @@ body {
             margin-left: -41px;
             padding: 20px 0;
             border-radius: 50%; }
+          /* line 89, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial ul.progressBar li:nth-child(1), .dashboard-container .dashboard-main .live ul.progressBar li:nth-child(1) {
             float: left; }
+            /* line 89, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
             .dashboard-container .dashboard-main .trial ul.progressBar li:nth-child(1):before, .dashboard-container .dashboard-main .live ul.progressBar li:nth-child(1):before {
               content: '1'; }
+          /* line 90, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial ul.progressBar li:nth-child(2), .dashboard-container .dashboard-main .live ul.progressBar li:nth-child(2) {
             margin-left: 8%; }
+            /* line 90, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
             .dashboard-container .dashboard-main .trial ul.progressBar li:nth-child(2):before, .dashboard-container .dashboard-main .live ul.progressBar li:nth-child(2):before {
               content: '2'; }
+          /* line 91, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial ul.progressBar li:nth-child(3), .dashboard-container .dashboard-main .live ul.progressBar li:nth-child(3) {
             float: right; }
+            /* line 91, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
             .dashboard-container .dashboard-main .trial ul.progressBar li:nth-child(3):before, .dashboard-container .dashboard-main .live ul.progressBar li:nth-child(3):before {
               content: '3'; }
+          /* line 93, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial ul.progressBar li.active:before, .dashboard-container .dashboard-main .live ul.progressBar li.active:before {
             background: #50a7b1; }
+      /* line 96, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial .contactsList-container, .dashboard-container .dashboard-main .live .contactsList-container {
         background-color: rgba(255, 255, 255, 0.5);
         height: auto;
         padding: 20px 10px 20px 20px;
         border-radius: 4px; }
+        /* line 97, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial .contactsList-container ul, .dashboard-container .dashboard-main .live .contactsList-container ul {
           padding: 0;
           list-style: none;
           overflow-y: scroll;
           height: 300px; }
+          /* line 98, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .contactsList-container ul li, .dashboard-container .dashboard-main .live .contactsList-container ul li {
             display: block;
             width: calc(100% - 5px);
@@ -452,9 +603,11 @@ body {
             font-weight: 700;
             font-size: 120%;
             color: #50a7b1;
-            transition: background-color .2s ease-in-out; }
+            transition: background-color 0.2s ease-in-out; }
+            /* line 99, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
             .dashboard-container .dashboard-main .trial .contactsList-container ul li:hover, .dashboard-container .dashboard-main .live .contactsList-container ul li:hover {
               background-color: #dfdfdf; }
+            /* line 100, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
             .dashboard-container .dashboard-main .trial .contactsList-container ul li a.close, .dashboard-container .dashboard-main .live .contactsList-container ul li a.close {
               font-weight: 400;
               font-size: 80%;
@@ -464,15 +617,20 @@ body {
               padding: 3px 7px 5px 7px;
               line-height: auto;
               border-radius: 50%; }
+              /* line 100, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
               .dashboard-container .dashboard-main .trial .contactsList-container ul li a.close:hover, .dashboard-container .dashboard-main .live .contactsList-container ul li a.close:hover {
                 opacity: 0.9; }
+          /* line 102, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .contactsList-container ul::-webkit-scrollbar, .dashboard-container .dashboard-main .live .contactsList-container ul::-webkit-scrollbar {
             width: 8px; }
+          /* line 103, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .contactsList-container ul::-webkit-scrollbar-track, .dashboard-container .dashboard-main .live .contactsList-container ul::-webkit-scrollbar-track {
             background-color: transparent; }
+          /* line 104, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .contactsList-container ul::-webkit-scrollbar-thumb, .dashboard-container .dashboard-main .live .contactsList-container ul::-webkit-scrollbar-thumb {
             background-color: #dde7e8;
             border-radius: 8px; }
+      /* line 107, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial .separator, .dashboard-container .dashboard-main .live .separator {
         position: relative;
         width: 100%;
@@ -483,6 +641,7 @@ body {
         text-transform: uppercase;
         font-weight: bold;
         color: #50a7b1; }
+        /* line 108, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial .separator.bordered:before, .dashboard-container .dashboard-main .live .separator.bordered:before {
           position: absolute;
           left: 0;
@@ -490,6 +649,7 @@ body {
           width: 100%;
           height: 2px;
           border: #d1d1d1 1px dashed; }
+      /* line 110, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial .phoneView, .dashboard-container .dashboard-main .live .phoneView {
         background: url(../images/img-phone-blank.png) top center no-repeat;
         background-size: auto 100%;
@@ -497,29 +657,36 @@ body {
         width: auto;
         min-width: 250px;
         padding: 55px 0; }
+        /* line 111, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial .phoneView .messagesContainer, .dashboard-container .dashboard-main .live .phoneView .messagesContainer {
           width: 215px;
           height: 370px;
           margin: 0 auto;
           overflow-y: hidden;
-          transition: all .2s ease-in-out;
+          transition: all 0.2s ease-in-out;
           padding-right: 10px;
           padding-left: 10px; }
+          /* line 112, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .phoneView .messagesContainer h5.name, .dashboard-container .dashboard-main .live .phoneView .messagesContainer h5.name {
             text-align: center;
             text-transform: uppercase;
             color: #50a7b1;
             font-weight: 700; }
+          /* line 113, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .phoneView .messagesContainer:hover, .dashboard-container .dashboard-main .live .phoneView .messagesContainer:hover {
             overflow-y: scroll; }
+          /* line 114, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .phoneView .messagesContainer::-webkit-scrollbar, .dashboard-container .dashboard-main .live .phoneView .messagesContainer::-webkit-scrollbar {
             width: 5px; }
+          /* line 115, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .phoneView .messagesContainer::-webkit-scrollbar-track, .dashboard-container .dashboard-main .live .phoneView .messagesContainer::-webkit-scrollbar-track {
             background-color: transparent; }
+          /* line 116, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .phoneView .messagesContainer::-webkit-scrollbar-thumb, .dashboard-container .dashboard-main .live .phoneView .messagesContainer::-webkit-scrollbar-thumb {
             background-color: #8dc0c3;
             border-radius: 8px;
             margin-left: 5px; }
+          /* line 117, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial .phoneView .messagesContainer > span, .dashboard-container .dashboard-main .live .phoneView .messagesContainer > span {
             line-height: normal;
             width: 100%;
@@ -530,15 +697,8 @@ body {
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
-            background-color: #fff;
-            /*& > span { line-height: normal;width: calc(100% - 10px); padding: 10px 15px; display: block; border-radius: 6px; margin-bottom: 20px; position: relative; z-index: 1;
-                &:after, &:before { bottom: -18px; left: 50%; border: solid transparent; content: ''; height: 0; width: 0; position: absolute; pointer-events: none; z-index: -1; }
-                &.left { background-color: $hippieBlue; color: $white; float: left;
-                    &:after { border-top-color: $hippieBlue; border-width: 18px; margin-left: -80px; -webkit-transform: rotate(-70deg);  transform: rotate(-70deg); }   
-                }
-                &.right { background-color: $white; float: right;
-                    &:after { border-top-color: $white; border-width: 18px; margin-left: 45px; -webkit-transform: rotate(70deg);  transform: rotate(70deg); }   
-                }*/ }
+            background-color: #fff; }
+            /* line 118, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
             .dashboard-container .dashboard-main .trial .phoneView .messagesContainer > span:after, .dashboard-container .dashboard-main .trial .phoneView .messagesContainer > span:before, .dashboard-container .dashboard-main .live .phoneView .messagesContainer > span:after, .dashboard-container .dashboard-main .live .phoneView .messagesContainer > span:before {
               bottom: -18px;
               left: 50%;
@@ -554,37 +714,49 @@ body {
               margin-left: -80px;
               -webkit-transform: rotate(-70deg);
               transform: rotate(-70deg); }
+      /* line 123, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.buildContacts input[type="text"], .dashboard-container .dashboard-main .live.buildContacts input[type="text"] {
         margin: 0 0 10px 0; }
+      /* line 126, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.scheduleBroadkast input[type="text"], .dashboard-container .dashboard-main .live.scheduleBroadkast input[type="text"] {
         text-align: left;
         font-size: 100%;
         color: #50a7b1;
         margin: 0 0 10px 0; }
+        /* line 127, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial.scheduleBroadkast input[type="text"]::-webkit-input-placeholder, .dashboard-container .dashboard-main .live.scheduleBroadkast input[type="text"]::-webkit-input-placeholder {
           color: #50a7b1; }
+        /* line 128, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial.scheduleBroadkast input[type="text"]:-moz-placeholder, .dashboard-container .dashboard-main .live.scheduleBroadkast input[type="text"]:-moz-placeholder {
           color: #50a7b1; }
+        /* line 129, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial.scheduleBroadkast input[type="text"]::-moz-placeholder, .dashboard-container .dashboard-main .live.scheduleBroadkast input[type="text"]::-moz-placeholder {
           color: #50a7b1; }
+        /* line 130, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial.scheduleBroadkast input[type="text"]:-ms-input-placeholder, .dashboard-container .dashboard-main .live.scheduleBroadkast input[type="text"]:-ms-input-placeholder {
           color: #50a7b1; }
+      /* line 132, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.scheduleBroadkast .separator, .dashboard-container .dashboard-main .live.scheduleBroadkast .separator {
         padding: 20px 0; }
+      /* line 133, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.scheduleBroadkast input.date, .dashboard-container .dashboard-main .live.scheduleBroadkast input.date {
         background: #fff url(../images/ico-calendar.png) 95% center no-repeat;
         background-size: 16px; }
+      /* line 134, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.scheduleBroadkast input.time, .dashboard-container .dashboard-main .live.scheduleBroadkast input.time {
         background: #fff url(../images/ico-time.png) 95% center no-repeat;
         background-size: 16px; }
+      /* line 137, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.createMessage textarea, .dashboard-container .dashboard-main .live.createMessage textarea {
         padding: 15px;
         margin-top: 15px;
         border: none;
         border-radius: 5px;
         resize: none; }
+      /* line 138, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.createMessage small, .dashboard-container .dashboard-main .live.createMessage small {
         clear: none; }
+      /* line 139, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .trial.createMessage .dropdown, .dashboard-container .dashboard-main .live.createMessage .dropdown {
         display: block;
         width: 100%;
@@ -592,6 +764,7 @@ body {
         background-size: 16px;
         font-size: 120%;
         color: #50a7b1; }
+        /* line 140, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .trial.createMessage .dropdown select, .dashboard-container .dashboard-main .live.createMessage .dropdown select {
           cursor: pointer;
           background: transparent;
@@ -601,47 +774,59 @@ body {
           width: 100%;
           padding: 10px 15px;
           border: none;
-          transition: all .2s ease-in-out; }
+          transition: all 0.2s ease-in-out; }
+          /* line 141, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial.createMessage .dropdown select:hover, .dashboard-container .dashboard-main .live.createMessage .dropdown select:hover {
             opacity: 0.8; }
+          /* line 142, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .trial.createMessage .dropdown select > option, .dashboard-container .dashboard-main .live.createMessage .dropdown select > option {
             text-align: center;
-            transition: all .2s ease-in-out; }
-      .dashboard-container .dashboard-main .trial.broadkastConfirmation, .dashboard-container .dashboard-main .live.broadkastConfirmation {
+            transition: all 0.2s ease-in-out; }
+      /* line 147, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .trial.broadkastConfirmation, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation, .dashboard-container .dashboard-main .live.broadkastConfirmation, .dashboard-container .dashboard-main .live.hypertargetedConfirmation {
         text-align: center;
         overflow: hidden;
         padding: 60px 15px;
         margin-top: 0;
         margin-bottom: 0; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div {
+        /* line 148, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation > .row > div, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div, .dashboard-container .dashboard-main .live.hypertargetedConfirmation > .row > div {
           position: relative; }
-          .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div > span, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div > span {
+          /* line 149, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+          .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div > span, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation > .row > div > span, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div > span, .dashboard-container .dashboard-main .live.hypertargetedConfirmation > .row > div > span {
             display: block; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation h2, .dashboard-container .dashboard-main .trial.broadkastConfirmation h3, .dashboard-container .dashboard-main .trial.broadkastConfirmation h4, .dashboard-container .dashboard-main .live.broadkastConfirmation h2, .dashboard-container .dashboard-main .live.broadkastConfirmation h3, .dashboard-container .dashboard-main .live.broadkastConfirmation h4 {
+        /* line 151, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation h2, .dashboard-container .dashboard-main .trial.broadkastConfirmation h3, .dashboard-container .dashboard-main .trial.broadkastConfirmation h4, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h2, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h3, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h4, .dashboard-container .dashboard-main .live.broadkastConfirmation h2, .dashboard-container .dashboard-main .live.broadkastConfirmation h3, .dashboard-container .dashboard-main .live.broadkastConfirmation h4, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h2, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h3, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h4 {
           color: #50a7b1;
           text-transform: uppercase;
           font-weight: 700;
           display: block; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation h2, .dashboard-container .dashboard-main .live.broadkastConfirmation h2 {
+        /* line 152, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation h2, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h2, .dashboard-container .dashboard-main .live.broadkastConfirmation h2, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h2 {
           font-size: 380%; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation h3, .dashboard-container .dashboard-main .live.broadkastConfirmation h3 {
+        /* line 153, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation h3, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h3, .dashboard-container .dashboard-main .live.broadkastConfirmation h3, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h3 {
           font-size: 220%;
           line-height: 140%; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation h4, .dashboard-container .dashboard-main .live.broadkastConfirmation h4 {
+        /* line 154, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation h4, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h4, .dashboard-container .dashboard-main .live.broadkastConfirmation h4, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h4 {
           text-transform: none;
           line-height: 140%; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation strong.code, .dashboard-container .dashboard-main .live.broadkastConfirmation strong.code {
+        /* line 155, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation strong.code, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation strong.code, .dashboard-container .dashboard-main .live.broadkastConfirmation strong.code, .dashboard-container .dashboard-main .live.hypertargetedConfirmation strong.code {
           display: block;
           color: #8dbebf;
           font-size: 300%;
           line-height: 100%;
           margin: 30px 0; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation .btn, .dashboard-container .dashboard-main .live.broadkastConfirmation .btn {
+        /* line 156, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation .btn, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation .btn, .dashboard-container .dashboard-main .live.broadkastConfirmation .btn, .dashboard-container .dashboard-main .live.hypertargetedConfirmation .btn {
           display: block;
           margin-bottom: 10px;
           font-size: 150%;
           color: #fff; }
-        .dashboard-container .dashboard-main .trial.broadkastConfirmation img, .dashboard-container .dashboard-main .live.broadkastConfirmation img {
+        /* line 157, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .trial.broadkastConfirmation img, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation img, .dashboard-container .dashboard-main .live.broadkastConfirmation img, .dashboard-container .dashboard-main .live.hypertargetedConfirmation img {
           width: auto;
           height: auto;
           max-height: 480px;
@@ -652,30 +837,126 @@ body {
           right: 30%;
           margin-right: -200px;
           z-index: -1; }
+    /* line 163, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .trial.buildContacts .contactsList-container {
       margin-bottom: 5px; }
+    /* line 171, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .live.buildContacts .contactsList-container {
       margin-bottom: 15px;
       height: 100%;
       min-height: 100%; }
+    /* line 172, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .live.buildContacts .separator {
       padding: 20px 0; }
+    /* line 174, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .live.buildContacts .batchUpload small {
       display: inline-block;
       clear: none; }
+      /* line 174, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .live.buildContacts .batchUpload small:first-child {
         text-transform: uppercase;
         font-weight: 700; }
+    /* line 175, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .live.buildContacts .batchUpload button {
       margin-top: 10px;
       float: left; }
+    /* line 179, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .live.scheduleBroadkast span.chooseSchedule > input:hover {
       cursor: pointer; }
-    .dashboard-container .dashboard-main .live.broadkastConfirmation .btn {
+    /* line 181, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.broadkastConfirmation .btn, .dashboard-container .dashboard-main .live.hypertargetedConfirmation .btn {
       font-size: 220%;
       font-weight: 700; }
+    /* line 183, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.hypertargeted-contacts .row .row > div:first-child {
+      margin-bottom: 0; }
+    /* line 184, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.hypertargeted-contacts .group {
+      margin-bottom: 15px; }
+    /* line 185, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.hypertargeted-contacts .btn {
+      margin-top: 26px;
+      display: inline-block;
+      width: 100%;
+      padding: 10px; }
+    /* line 188, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.location-based-contacts .group {
+      margin-bottom: 15px; }
+    /* line 189, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.location-based-contacts .btn {
+      width: 100%; }
+    /* line 192, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast .row .row > div:first-child {
+      margin-bottom: 0; }
+    /* line 194, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast .title h3 {
+      font-size: 220%;
+      margin-bottom: 0; }
+    /* line 195, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast .title h4 {
+      text-transform: uppercase;
+      font-size: 120%;
+      font-weight: 700;
+      letter-spacing: .2em; }
+    /* line 197, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast .group {
+      margin-bottom: 20px; }
+      /* line 198, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .live.videoBroadkast .group .chooseSchedule {
+        display: block;
+        margin-bottom: 10px; }
+        /* line 199, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+        .dashboard-container .dashboard-main .live.videoBroadkast .group .chooseSchedule .date {
+          margin-top: 0;
+          text-align: left; }
+    /* line 202, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast textarea {
+      margin-top: 0;
+      float: none; }
+    /* line 203, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast .batchUpload label {
+      text-align: center;
+      width: 100%; }
+    /* line 204, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast input[type="text"] {
+      text-align: left;
+      margin-top: 0; }
+    /* line 205, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.videoBroadkast .btn {
+      width: 100%; }
+    /* line 208, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.chooseyourReach .title {
+      text-align: center;
+      border-bottom: #d1d1d1 2px dashed;
+      margin-bottom: 50px;
+      padding-bottom: 20px; }
+      /* line 209, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .live.chooseyourReach .title h2 {
+        font-size: 280%;
+        color: #50a7b1;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0; }
+      /* line 210, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .live.chooseyourReach .title h3 {
+        font-size: 155%;
+        line-height: auto; }
+    /* line 212, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .live.chooseyourReach .choices {
+      text-align: center; }
+      /* line 213, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .live.chooseyourReach .choices h4 {
+        text-transform: uppercase;
+        color: #50a7b1;
+        font-weight: 600; }
+      /* line 214, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .live.chooseyourReach .choices img {
+        width: 50%;
+        margin: 0 auto 30px auto; }
+    /* line 220, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .border-bot {
       border-bottom: 1px solid #98d0d1; }
+      /* line 221, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .border-bot h4 {
         font-size: 170%;
         font-weight: 700;
@@ -684,8 +965,10 @@ body {
         text-transform: uppercase;
         margin: 0;
         padding: 45px; }
+    /* line 226, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build input[type="text"] {
       text-align: left; }
+    /* line 227, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build textarea {
       display: block;
       width: 100%;
@@ -695,11 +978,14 @@ body {
       border: none;
       max-height: 111px;
       min-width: 100%; }
+    /* line 228, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build .remain-txt {
       font-size: 12px;
       text-align: right; }
+    /* line 229, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build .btn-con {
       margin-bottom: 10px; }
+      /* line 230, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .com-build .btn-con .violet {
         background: #7185bf;
         width: auto;
@@ -707,11 +993,13 @@ body {
         display: inline-block;
         margin-right: 15px;
         border-radius: 6px; }
+      /* line 231, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .com-build .btn-con .auto-width {
         width: auto;
         padding: 9px 38px;
         display: inline-block;
         border-radius: 6px; }
+    /* line 233, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build select {
       border: none;
       background: #d6d6d6;
@@ -719,47 +1007,90 @@ body {
       width: 100%;
       padding: 10px;
       display: block; }
+      /* line 234, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .com-build select.white {
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        margin-bottom: 5px; }
+    /* line 236, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build .date {
       width: 120px; }
+      /* line 237, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .com-build .date.white {
         background-color: #ffffff; }
+    /* line 239, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build .date-con {
       display: inline-block;
       margin-top: 10px; }
+      /* line 240, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .com-build .date-con label {
         display: block; }
+      /* line 241, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .com-build .date-con.small-con {
         width: 120px;
         margin-right: 10px; }
+      /* line 242, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .com-build .date-con.big-con {
         width: 205px; }
+        /* line 243, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
         .dashboard-container .dashboard-main .com-build .date-con.big-con .date {
           background: #fff url(../images/ico-calendar.png) 95% center no-repeat;
           background-size: 16px;
           height: 37px;
           height: 41px; }
+          /* line 245, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .com-build .date-con.big-con .date.gray {
             background-color: #d6d6d6; }
+          /* line 246, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
           .dashboard-container .dashboard-main .com-build .date-con.big-con .date.white {
             background-color: #ffffff; }
+    /* line 250, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .com-build .large-btn {
       margin-top: 10px;
       padding: 10px 70px;
       display: block; }
-    .dashboard-container .dashboard-main .feedback {
+    /* line 252, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .com-build label.indent {
+      display: block;
+      padding-left: 15px; }
+    /* line 253, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .com-build label.block {
+      display: block; }
+    /* line 255, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .com-build .divider {
+      background: #98d0d1;
+      width: 100%;
+      height: 1px;
+      margin: 30px 0; }
+    /* line 257, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .com-build .check-con {
+      display: block; }
+      /* line 258, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .com-build .check-con .for-check {
+        display: inline-block;
+        color: #50a7b1;
+        margin-left: 5px; }
+    /* line 261, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .com-build .radio-con {
+      display: block; }
+      /* line 262, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+      .dashboard-container .dashboard-main .com-build .radio-con input[type="radio"] + label:hover {
+        cursor: pointer; }
+    /* line 269, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .com-build.feedback {
       margin-top: 60px;
       margin-bottom: 100px; }
 
 @media screen and (max-width: 767px) {
+  /* line 279, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .faq {
     font-size: 100%;
     line-height: 180%;
     padding: 20px 15px 26px 15px; }
+    /* line 280, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .faq p {
       padding: 65px 0 0 0;
       display: block; }
+      /* line 281, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
       .dashboard-container .dashboard-main .faq p:before {
         background-size: 60px;
         width: 60px;
@@ -769,20 +1100,26 @@ body {
         margin-top: 0;
         left: 50%;
         margin-left: -30px; }
+    /* line 283, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .faq .btn {
       margin-top: 10px; }
+  /* line 287, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .trial .row > div, .dashboard-container .dashboard-main .live .row > div {
     margin-bottom: 20px; }
+    /* line 287, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .trial .row > div:first-child, .dashboard-container .dashboard-main .live .row > div:first-child {
       margin-bottom: 40px; }
+  /* line 289, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .trial ul.progressBar:before, .dashboard-container .dashboard-main .live ul.progressBar:before {
     height: 2px;
     border-top: #b2e3e8 2px dashed;
     top: 30px; }
+  /* line 290, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .trial ul.progressBar li, .dashboard-container .dashboard-main .live ul.progressBar li {
     font-size: 80%;
     line-height: normal;
     padding-top: 70px; }
+    /* line 291, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
     .dashboard-container .dashboard-main .trial ul.progressBar li:before, .dashboard-container .dashboard-main .live ul.progressBar li:before {
       font-size: 200%;
       line-height: 100%;
@@ -792,98 +1129,133 @@ body {
       margin-left: -30px;
       padding: 19px 0;
       border-radius: 50%; }
+  /* line 294, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .trial .separator, .dashboard-container .dashboard-main .live .separator {
     padding: 15px 0; }
-  .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div {
+  /* line 297, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+  .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation > .row > div, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div, .dashboard-container .dashboard-main .live.hypertargetedConfirmation > .row > div {
     padding: 20px 15px; }
-    .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div.pull-right, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div.pull-right {
+    /* line 297, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+    .dashboard-container .dashboard-main .trial.broadkastConfirmation > .row > div.pull-right, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation > .row > div.pull-right, .dashboard-container .dashboard-main .live.broadkastConfirmation > .row > div.pull-right, .dashboard-container .dashboard-main .live.hypertargetedConfirmation > .row > div.pull-right {
       margin-top: 0; }
-  .dashboard-container .dashboard-main .trial.broadkastConfirmation h2, .dashboard-container .dashboard-main .live.broadkastConfirmation h2 {
+  /* line 298, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+  .dashboard-container .dashboard-main .trial.broadkastConfirmation h2, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h2, .dashboard-container .dashboard-main .live.broadkastConfirmation h2, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h2 {
     font-size: 300%; }
-  .dashboard-container .dashboard-main .trial.broadkastConfirmation h3, .dashboard-container .dashboard-main .live.broadkastConfirmation h3 {
+  /* line 299, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+  .dashboard-container .dashboard-main .trial.broadkastConfirmation h3, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation h3, .dashboard-container .dashboard-main .live.broadkastConfirmation h3, .dashboard-container .dashboard-main .live.hypertargetedConfirmation h3 {
     font-size: 150%; }
-  .dashboard-container .dashboard-main .live.broadkastConfirmation .btn {
+  /* line 304, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+  .dashboard-container .dashboard-main .live.broadkastConfirmation .btn, .dashboard-container .dashboard-main .live.hypertargetedConfirmation .btn {
     font-size: 220%;
     font-weight: 700; }
-
+  /* line 307, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+  .dashboard-container .dashboard-main .live.hypertargeted-contacts .btn {
+    margin-top: 25px;
+    display: inline-block; }
+  /* line 312, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .border-bot h4 {
     padding: 20px 0; } }
+
 @media screen and (max-width: 991px) {
-  .dashboard-container .dashboard-main .trial.broadkastConfirmation img, .dashboard-container .dashboard-main .live.broadkastConfirmation img {
+  /* line 322, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
+  .dashboard-container .dashboard-main .trial.broadkastConfirmation img, .dashboard-container .dashboard-main .trial.hypertargetedConfirmation img, .dashboard-container .dashboard-main .live.broadkastConfirmation img, .dashboard-container .dashboard-main .live.hypertargetedConfirmation img {
     right: 50%;
     margin-right: -160px;
     opacity: 0.2;
     max-height: 500px; }
-
+  /* line 326, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .border-bot {
     margin-bottom: 20px; }
-
+  /* line 329, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/main-stylesheet.scss */
   .dashboard-container .dashboard-main .com-build select {
     width: 200px; } }
+
 /*End Main Stylesheet*/
+/* line 2, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
 body.dashboard {
   overflow-x: hidden; }
+  /* line 3, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .side-menu {
     position: absolute;
     z-index: 2;
     min-height: 100%;
     height: 100%; }
+    /* line 4, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .side-menu .navbar-header {
       width: 100%; }
+      /* line 8, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .navbar-header .navbar-toggle.in span:nth-child(2) {
         transform: rotate(45deg);
         transform-origin: 5px; }
+      /* line 9, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .navbar-header .navbar-toggle.in span:nth-child(3) {
         opacity: 0; }
+      /* line 10, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .navbar-header .navbar-toggle.in span:nth-child(4) {
         transform: rotate(-45deg);
         transform-origin: 5px; }
+      /* line 12, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .navbar-header .navbar-toggle > span {
         transition: all 0.2s; }
+        /* line 13, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
         body.dashboard .side-menu .navbar-header .navbar-toggle > span:nth-child(2) {
           transform: rotate(0); }
+        /* line 14, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
         body.dashboard .side-menu .navbar-header .navbar-toggle > span:nth-child(3) {
           opacity: 1; }
+        /* line 15, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
         body.dashboard .side-menu .navbar-header .navbar-toggle > span:nth-child(4) {
           transform: rotate(0); }
+      /* line 18, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .navbar-header .navbar-brand {
         display: block;
         width: 100%;
         height: auto;
         background-color: #fff;
         padding: 25px 15px; }
+        /* line 19, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
         body.dashboard .side-menu .navbar-header .navbar-brand img {
           width: 70%;
           margin: auto; }
+    /* line 22, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .side-menu .side-menu-container {
       text-align: center;
       color: #fff; }
+      /* line 23, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .side-menu-container span {
         padding: 20px 15px;
         border-top: #d1d1d1 1px solid; }
+        /* line 23, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
         body.dashboard .side-menu .side-menu-container span:first-child {
           border-top: none; }
+  /* line 26, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .dashboard-main {
     z-index: 5; }
+  /* line 27, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .modal-header {
     padding-bottom: 0;
     border: none; }
+  /* line 28, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .modal-content {
     padding-bottom: 30px; }
+    /* line 29, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .modal-content h4 {
       font-size: 140%;
       line-height: 140%; }
+    /* line 30, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .modal-content .modal-body button {
       margin-top: 10px;
       padding: 10px; }
 
 @media screen and (max-width: 767px) {
+  /* line 35, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .side-menu {
     position: absolute;
     width: 100%;
     border-right: none;
     top: 0;
     z-index: 5; }
+    /* line 36, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .side-menu .navbar-header {
       border: none;
       padding: 8px 0;
@@ -893,6 +1265,7 @@ body.dashboard {
       background: -webkit-linear-gradient(left, #369fb5 0%, #a0c7c6 40%);
       background: linear-gradient(to right, #369fb5 0%, #a0c7c6 40%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#369fb5', endColorstr='#a0c7c6',GradientType=1 ); }
+      /* line 41, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .navbar-header .navbar-brand {
         display: inline-block;
         width: auto;
@@ -904,6 +1277,7 @@ body.dashboard {
         width: 150px;
         height: 70px;
         max-height: 70px; }
+        /* line 42, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
         body.dashboard .side-menu .navbar-header .navbar-brand img {
           position: absolute;
           height: 70%;
@@ -912,12 +1286,14 @@ body.dashboard {
           margin-left: -53px;
           top: 50%;
           margin-top: -25px; }
+      /* line 44, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
       body.dashboard .side-menu .navbar-header .navbar-toggle {
         border: 0;
         float: left;
         padding: 18px;
         margin: 0;
         border-radius: 0; }
+        /* line 45, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
         body.dashboard .side-menu .navbar-header .navbar-toggle > .icon-bar {
           background-color: #fff;
           width: 30px;
@@ -952,8 +1328,10 @@ body.dashboard {
       left: 0; }
     100% {
       left: -300px; } }
+  /* line 73, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .side-menu-container {
     position: absolute; }
+    /* line 74, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .side-menu-container > .navbar-nav.slide-in {
       -moz-animation: slidein 300ms forwards;
       -o-animation: slidein 300ms forwards;
@@ -961,6 +1339,7 @@ body.dashboard {
       animation: slidein 300ms forwards;
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d; }
+    /* line 82, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .side-menu-container > .navbar-nav {
       position: relative;
       left: -300px;
@@ -1007,6 +1386,7 @@ body.dashboard {
       left: 300px; }
     100% {
       left: 0; } }
+  /* line 115, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .dashboard-main {
     position: relative;
     -moz-animation: bodyslideout 300ms forwards;
@@ -1016,6 +1396,7 @@ body.dashboard {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     margin-top: 70px; }
+  /* line 124, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .dashboard-main-in {
     -moz-animation: bodyslidein 300ms forwards;
     -o-animation: bodyslidein 300ms forwards;
@@ -1023,11 +1404,15 @@ body.dashboard {
     animation: bodyslidein 300ms forwards;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; } }
+
 @media screen and (min-width: 768px) {
+  /* line 136, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .side-menu {
     position: relative; }
+    /* line 138, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
     body.dashboard .side-menu .navbar-header .navbar-nav {
       width: 100%; }
+  /* line 141, /Users/jamfadri/Documents/Works/MAMP/htdocs/Project_KAST_latest/css/scss/_bootstrapOverride.scss */
   body.dashboard .dashboard-main {
     float: right; } }
 

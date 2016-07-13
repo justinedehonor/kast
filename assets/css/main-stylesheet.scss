@@ -71,6 +71,17 @@
             small { display: block; clear: both; text-align: center; }
             input[type="text"], button { display: block; width: 100%; padding: 9px 15px; border-radius: 3px; border: none; text-align: center; font-size: 120%; }
             input[type="text"] { background: $white; color: #414141; margin-top: 15px; &:disabled { background: $lGray; color: #4b4b4b; font-weight: bold; } }
+            textarea { padding: 15px; margin-top: 15px; border: none; border-radius: 5px; resize: none; }
+            .dropdown { display: block; width: 100%; background: $white url(../images/caret-down.png) 96% center no-repeat; background-size: 16px; font-size: 120%; color: $hippieBlue;
+                select { cursor: pointer; background: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 100%; padding: 10px 15px; border: none; transition: all .2s ease-in-out;
+                    &:hover { opacity: 0.8; }
+                    & > option { text-align: center; transition: all .2s ease-in-out; }
+                }
+            }
+            input {
+                &.date { background: $white url(../images/ico-calendar.png) 95% center no-repeat; background-size: 16px; }
+                &.time { background: $white url(../images/ico-time.png) 95% center no-repeat; background-size: 16px; }
+            }
             ul.progressBar { list-style: none; margin: 0; padding: 0; width: 100%; display: block; position: relative;
                 &:before { content: ''; position: absolute; width: 80%; margin-left: 10%; height: 3px; border-top: $powderBlue 3px dashed; top: 41px; }
                 li { float: left; text-align: center; font-weight: 700; text-transform: uppercase; color: $hippieBlue; max-width: 28%!important; position: relative; padding: 90px 0 0 0;
@@ -105,15 +116,6 @@
                     &::-webkit-scrollbar-thumb { background-color: $neptune; border-radius: 8px; margin-left: 5px; }
                     & > span { line-height: normal; width: 100%; float: left; padding: 10px 15px; display: block; border-radius: 6px; margin-bottom: 20px; position: relative; z-index: 1; background-color: $white;
                         &:after, &:before { bottom: -18px; left: 50%; border: solid transparent; content: ''; height: 0; width: 0; position: absolute; pointer-events: none; z-index: -1; border-top-color: $white; border-width: 18px; margin-left: -80px; -webkit-transform: rotate(-70deg);  transform: rotate(-70deg); }
-                    // Sabi ni Nethki
-                    /*& > span { line-height: normal;width: calc(100% - 10px); padding: 10px 15px; display: block; border-radius: 6px; margin-bottom: 20px; position: relative; z-index: 1;
-                        &:after, &:before { bottom: -18px; left: 50%; border: solid transparent; content: ''; height: 0; width: 0; position: absolute; pointer-events: none; z-index: -1; }
-                        &.left { background-color: $hippieBlue; color: $white; float: left;
-                            &:after { border-top-color: $hippieBlue; border-width: 18px; margin-left: -80px; -webkit-transform: rotate(-70deg);  transform: rotate(-70deg); }   
-                        }
-                        &.right { background-color: $white; float: right;
-                            &:after { border-top-color: $white; border-width: 18px; margin-left: 45px; -webkit-transform: rotate(70deg);  transform: rotate(70deg); }   
-                        }*/
                     }
                 }
             }
@@ -142,7 +144,7 @@
                 }
             }
             // BroadKast Confirmation
-            &.broadkastConfirmation { text-align: center; overflow: hidden; padding: 60px 15px; margin-top: 0; margin-bottom: 0;
+            &.broadkastConfirmation, &.hypertargetedConfirmation { text-align: center; overflow: hidden; padding: 60px 15px; margin-top: 0; margin-bottom: 0;
                 & > .row > div { position: relative;
                     & > span { display: block; }
                 }
@@ -176,9 +178,44 @@
             &.scheduleBroadkast {
                 span.chooseSchedule > input:hover { cursor: pointer; }
             }
-            &.broadkastConfirmation { .btn { font-size: 220%; font-weight: 700; } }
+            &.broadkastConfirmation, &.hypertargetedConfirmation { .btn { font-size: 220%; font-weight: 700; } }
+            &.hypertargeted-contacts {
+                .row .row > div:first-child { margin-bottom: 0; }
+                .group { margin-bottom: 15px; }
+                .btn {  margin-top: 26px; display: inline-block; width: 100%; padding: 10px; }
+            }
+            &.location-based-contacts {
+                .group { margin-bottom: 15px; }
+                .btn { width: 100%; }
+            }
+            &.videoBroadkast {
+                .row .row > div:first-child { margin-bottom: 0; }
+                .title {
+                    h3 { font-size: 220%; margin-bottom: 0; }
+                    h4 { text-transform: uppercase; font-size: 120%; font-weight: 700; letter-spacing: .2em; }
+                }
+                .group { margin-bottom: 20px;
+                    .chooseSchedule { display: block; margin-bottom: 10px;
+                        .date { margin-top: 0; text-align: left; }
+                    }
+                }
+                textarea { margin-top: 0; float: none; }
+                .batchUpload label { text-align: center; width: 100%;  }
+                input[type="text"] { text-align: left; margin-top: 0; }
+                .btn { width: 100%; }
+            }
+            &.chooseyourReach {
+                .title { text-align: center; border-bottom: $lGray 2px dashed; margin-bottom: 50px; padding-bottom: 20px;
+                    h2 { font-size: 280%; color: $hippieBlue; text-transform: uppercase; font-weight: 700; margin-bottom: 0; }
+                    h3 { font-size: 155%; line-height: auto; }
+                }
+                .choices { text-align: center;
+                    h4 { text-transform: uppercase; color: $hippieBlue; font-weight: 600; }
+                    img { width: 50%; margin: 0 auto 30px auto; }
+                }
+            }
         }
-
+        
         // Border bottom title
         .border-bot{border-bottom: 1px solid #98d0d1;
             h4{font-size: 170%; font-weight: 700;color: #50a7b1;margin-bottom: 20px;text-transform: uppercase;margin: 0;padding: 45px;}
@@ -194,7 +231,7 @@
                 .auto-width{ width: auto;padding: 9px 38px;display: inline-block;border-radius: 6px;}
             }
             select{border: none;background: #d6d6d6;border-radius: 3px;width: 100%; padding: 10px;display: block;
-                &.white{background-color: #ffffff;}
+                &.white{background-color: #ffffff;margin-bottom: 5px;}
             }
             .date{width: 120px;
                 &.white{background-color: #ffffff;}
@@ -211,14 +248,26 @@
                 }
             }
             .large-btn{margin-top: 10px;padding: 10px 70px;display: block;}
+            label{
+                &.indent{display: block; padding-left: 15px;}
+                &.block{display: block;}
+            }
+            .divider{background: #98d0d1; width: 100%; height: 1px;margin: 30px 0;}
+
+            .check-con{display: block;
+                .for-check{display: inline-block;color: #50a7b1;margin-left: 5px;}
+            }
+            
+            .radio-con { display: block;
+                input[type="radio"] + label:hover { cursor: pointer; }
+            }
+        
         }
 
         // Feedback
 
-        .feedback{margin-top: 60px;margin-bottom: 100px;
-
-        }
-    
+        .com-build { &.feedback { margin-top: 60px;margin-bottom: 100px; } }
+        
     
     }
 }
@@ -244,14 +293,19 @@
                 }
                 .separator { padding: 15px 0; }
                 // BroadKast Confirmation
-                &.broadkastConfirmation {
+                &.broadkastConfirmation, &.hypertargetedConfirmation {
                     & > .row > div { padding: 20px 15px; &.pull-right { margin-top: 0; } }
                     h2 { font-size: 300%; }
                     h3 { font-size: 150%; }
                 }
             }
-            .live.broadkastConfirmation {
-                .btn { font-size: 220%; font-weight: 700; }
+            .live {
+                &.broadkastConfirmation, &.hypertargetedConfirmation {
+                    .btn { font-size: 220%; font-weight: 700; }
+                }
+                &.hypertargeted-contacts {
+                    .btn { margin-top: 25px; display: inline-block; }
+                }
             }
         }
     }
@@ -265,7 +319,7 @@
         .dashboard-main {
             .trial, .live {
                 // BroadKast Confirmation
-                &.broadkastConfirmation img { right: 50%; margin-right: -160px; opacity: 0.2; max-height: 500px; }
+                &.broadkastConfirmation, &.hypertargetedConfirmation { img { right: 50%; margin-right: -160px; opacity: 0.2; max-height: 500px; } }
             }
         }
     }

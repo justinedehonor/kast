@@ -34,6 +34,37 @@
           }).on("changeYear changeMonth", function (event) {
             $(this).datepicker("update", event.date);
           });
+
+          $("#pickAdate1").datepicker({
+            endDate: "today", // birthdays should be in the past
+            startView: 2 // show a decade instead of a month initially
+          }).on("changeYear changeMonth", function (event) {
+            $(this).datepicker("update", event.date);
+          });
+
+          $("#promoPickDate1").datepicker({
+            endDate: "today", // birthdays should be in the past
+            startView: 2 // show a decade instead of a month initially
+          }).on("changeYear changeMonth", function (event) {
+            $(this).datepicker("update", event.date);
+          });
+
+          $("#promoPickDate2").datepicker({
+            endDate: "today", // birthdays should be in the past
+            startView: 2 // show a decade instead of a month initially
+          }).on("changeYear changeMonth", function (event) {
+            $(this).datepicker("update", event.date);
+          });
+
+          $("#promoPickDate3").datepicker({
+            endDate: "today", // birthdays should be in the past
+            startView: 2 // show a decade instead of a month initially
+          }).on("changeYear changeMonth", function (event) {
+            $(this).datepicker("update", event.date);
+          });
+
+
+
         });
         $('#myModal').appendTo("body");
         $('#pickAtime').timepicker();

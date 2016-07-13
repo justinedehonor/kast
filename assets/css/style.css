@@ -54,7 +54,7 @@ body, html {
     .header-con .menu-con ul li {
       list-style: none;
       display: inline-block;
-      padding: 6px 15px 2px 15px; }
+      padding: 6px 15px 5px 15px; }
       .header-con .menu-con ul li a {
         text-decoration: none;
         text-transform: uppercase;
@@ -86,11 +86,6 @@ body, html {
       width: 100%;
       height: 475px;
       background-position: 80px 50px; }
-    .main-con .center-con .hand-img.login-bg {
-      background: url("../images/login-bg.png") no-repeat;
-      width: 100%;
-      height: 560px;
-      background-position: 0px 40px; }
   .main-con .center-con .account-title {
     font-family: "Gotham-Black", Open Sans, sans-serif;
     color: #59A7B2;
@@ -111,69 +106,6 @@ body, html {
     z-index: 99; }
     .main-con .center-con .text-con.padding-top {
       padding: 100px 0 50px 0; }
-    .main-con .center-con .text-con.login-con .title {
-      font-size: 30px;
-      font-family: "Gotham-Bold", Open Sans, sans-serif;
-      color: #7fb4c1;
-      text-align: center;
-      padding: 0 100px;
-      line-height: 30px; }
-      .main-con .center-con .text-con.login-con .title span {
-        font-size: 16px;
-        display: block; }
-    .main-con .center-con .text-con.login-con form#login {
-      text-align: center;
-      margin: 0 auto;
-      width: 220px; }
-      .main-con .center-con .text-con.login-con form#login input[type="text"] {
-        border: none;
-        margin-top: 15px;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px;
-        width: 100%;
-        font-size: 14px;
-        font-family: "Gotham-Bold", Open Sans, sans-serif; }
-        .main-con .center-con .text-con.login-con form#login input[type="text"]::-webkit-input-placeholder {
-          /* Chrome/Opera/Safari */
-          color: #7e7e7e; }
-      .main-con .center-con .text-con.login-con form#login input[type="button"] {
-        font-size: 18px;
-        color: #ffffff;
-        font-family: "Gotham-Bold", Open Sans, sans-serif;
-        border-radius: 6px;
-        background: #0d7ca5;
-        border: none;
-        width: 100%;
-        margin-top: 15px;
-        padding: 10px 0;
-        transition: all .2s; }
-        .main-con .center-con .text-con.login-con form#login input[type="button"]:hover {
-          background: #0b6789; }
-      .main-con .center-con .text-con.login-con form#login .forget-pass {
-        color: #7e7e7e;
-        font-size: 12px;
-        text-align: center;
-        font-family: "Gotham-Bold", Open Sans, sans-serif;
-        display: block;
-        padding: 10px; }
-      .main-con .center-con .text-con.login-con form#login input[type="checkbox"] {
-        border: none;
-        box-shadow: none;
-        background: #ffffff;
-        position: relative;
-        top: 2px; }
-      .main-con .center-con .text-con.login-con form#login #forgot {
-        position: relative;
-        top: 2px;
-        border: none;
-        box-shadow: none;
-        background: #ffffff; }
-      .main-con .center-con .text-con.login-con form#login label {
-        color: #7e7e7e;
-        font-size: 12px;
-        text-align: center;
-        font-family: "Gotham-Bold", Open Sans, sans-serif; }
     .main-con .center-con .text-con .why-txt {
       font-size: 50px;
       line-height: 90%;
